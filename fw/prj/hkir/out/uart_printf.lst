@@ -1,0 +1,237 @@
+GAS LISTING /tmp/cc2jHdTw.s 			page 1
+
+
+   1               		.file	"uart_printf.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/j/projects/acris/avr/prj/test-nrf/",100,0,2,.Ltext0
+   8               		.stabs	"../../lib/uart_printf.c",100,0,2,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  13               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,0,0
+  14               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  15               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  16               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  17               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  18               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  19               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  20               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  21               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  23               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  24               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  25               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  26               		.stabs	"short _Fract:t(0,15)=r(0,1);1;0;",128,0,0,0
+  27               		.stabs	"_Fract:t(0,16)=r(0,1);2;0;",128,0,0,0
+  28               		.stabs	"long _Fract:t(0,17)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"long long _Fract:t(0,18)=r(0,1);8;0;",128,0,0,0
+  30               		.stabs	"unsigned short _Fract:t(0,19)=r(0,1);1;0;",128,0,0,0
+  31               		.stabs	"unsigned _Fract:t(0,20)=r(0,1);2;0;",128,0,0,0
+  32               		.stabs	"unsigned long _Fract:t(0,21)=r(0,1);4;0;",128,0,0,0
+  33               		.stabs	"unsigned long long _Fract:t(0,22)=r(0,1);8;0;",128,0,0,0
+  34               		.stabs	"_Sat short _Fract:t(0,23)=r(0,1);1;0;",128,0,0,0
+  35               		.stabs	"_Sat _Fract:t(0,24)=r(0,1);2;0;",128,0,0,0
+  36               		.stabs	"_Sat long _Fract:t(0,25)=r(0,1);4;0;",128,0,0,0
+  37               		.stabs	"_Sat long long _Fract:t(0,26)=r(0,1);8;0;",128,0,0,0
+  38               		.stabs	"_Sat unsigned short _Fract:t(0,27)=r(0,1);1;0;",128,0,0,0
+  39               		.stabs	"_Sat unsigned _Fract:t(0,28)=r(0,1);2;0;",128,0,0,0
+  40               		.stabs	"_Sat unsigned long _Fract:t(0,29)=r(0,1);4;0;",128,0,0,0
+  41               		.stabs	"_Sat unsigned long long _Fract:t(0,30)=r(0,1);8;0;",128,0,0,0
+  42               		.stabs	"short _Accum:t(0,31)=r(0,1);2;0;",128,0,0,0
+  43               		.stabs	"_Accum:t(0,32)=r(0,1);4;0;",128,0,0,0
+  44               		.stabs	"long _Accum:t(0,33)=r(0,1);8;0;",128,0,0,0
+  45               		.stabs	"long long _Accum:t(0,34)=r(0,1);8;0;",128,0,0,0
+  46               		.stabs	"unsigned short _Accum:t(0,35)=r(0,1);2;0;",128,0,0,0
+  47               		.stabs	"unsigned _Accum:t(0,36)=r(0,1);4;0;",128,0,0,0
+  48               		.stabs	"unsigned long _Accum:t(0,37)=r(0,1);8;0;",128,0,0,0
+  49               		.stabs	"unsigned long long _Accum:t(0,38)=r(0,1);8;0;",128,0,0,0
+  50               		.stabs	"_Sat short _Accum:t(0,39)=r(0,1);2;0;",128,0,0,0
+  51               		.stabs	"_Sat _Accum:t(0,40)=r(0,1);4;0;",128,0,0,0
+  52               		.stabs	"_Sat long _Accum:t(0,41)=r(0,1);8;0;",128,0,0,0
+  53               		.stabs	"_Sat long long _Accum:t(0,42)=r(0,1);8;0;",128,0,0,0
+  54               		.stabs	"_Sat unsigned short _Accum:t(0,43)=r(0,1);2;0;",128,0,0,0
+  55               		.stabs	"_Sat unsigned _Accum:t(0,44)=r(0,1);4;0;",128,0,0,0
+  56               		.stabs	"_Sat unsigned long _Accum:t(0,45)=r(0,1);8;0;",128,0,0,0
+  57               		.stabs	"_Sat unsigned long long _Accum:t(0,46)=r(0,1);8;0;",128,0,0,0
+GAS LISTING /tmp/cc2jHdTw.s 			page 2
+
+
+  58               		.stabs	"void:t(0,47)=(0,47)",128,0,0,0
+  59               		.stabs	"/usr/avr/include/stdio.h",130,0,0,0
+  60               		.stabs	"/usr/avr/include/inttypes.h",130,0,0,0
+  61               		.stabs	"/usr/lib/gcc/avr/4.8.2/include/stdint.h",130,0,0,0
+  62               		.stabs	"/usr/avr/include/stdint.h",130,0,0,0
+  63               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,121,0
+  64               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,122,0
+  65               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,123,0
+  66               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,124,0
+  67               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,125,0
+  68               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,126,0
+  69               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,128,0
+  70               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,129,0
+  71               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,142,0
+  72               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,147,0
+  73               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,159,0
+  74               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,164,0
+  75               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,169,0
+  76               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,174,0
+  77               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,179,0
+  78               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,184,0
+  79               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,192,0
+  80               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,199,0
+  81               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,213,0
+  82               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,218,0
+  83               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,223,0
+  84               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,228,0
+  85               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,233,0
+  86               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,238,0
+  87               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,246,0
+  88               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,253,0
+  89               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,273,0
+  90               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,278,0
+  91               		.stabn	162,0,0,0
+  92               		.stabn	162,0,0,0
+  93               		.stabs	"int_farptr_t:t(2,1)=(4,5)",128,0,77,0
+  94               		.stabs	"uint_farptr_t:t(2,2)=(4,6)",128,0,81,0
+  95               		.stabn	162,0,0,0
+  96               		.stabs	"/usr/lib/gcc/avr/4.8.2/include/stdarg.h",130,0,0,0
+  97               		.stabs	"__gnuc_va_list:t(5,1)=(5,2)=*(0,47)",128,0,40,0
+  98               		.stabs	"va_list:t(5,3)=(5,1)",128,0,98,0
+  99               		.stabn	162,0,0,0
+ 100               		.stabs	"/usr/lib/gcc/avr/4.8.2/include/stddef.h",130,0,0,0
+ 101               		.stabs	"size_t:t(6,1)=(0,4)",128,0,212,0
+ 102               		.stabn	162,0,0,0
+ 103               		.stabs	"__file:T(1,1)=s14buf:(1,2)=*(0,2),0,16;unget:(0,11),16,8;flags:(4,2),24,8;size:(0,1),32,16
+ 104               		.stabn	162,0,0,0
+ 105               		.stabs	"./config.h",130,0,0,0
+ 106               		.stabs	"../../inc/config_top.h",130,0,0,0
+ 107               		.stabs	"/usr/avr/include/avr/io.h",130,0,0,0
+ 108               		.stabs	"/usr/avr/include/avr/fuse.h",130,0,0,0
+ 109               		.stabs	"__fuse_t:t(10,1)=(10,2)=s3low:(0,11),0,8;high:(0,11),8,8;extended:(0,11),16,8;;",128,0,244
+ 110               		.stabn	162,0,0,0
+ 111               		.stabn	162,0,0,0
+ 112               		.stabn	162,0,0,0
+ 113               		.stabn	162,0,0,0
+ 114               		.stabs	"uart_printf_putchar:F(0,1)",36,0,23,uart_printf_putchar
+GAS LISTING /tmp/cc2jHdTw.s 			page 3
+
+
+ 115               		.stabs	"var:P(0,2)",64,0,23,24
+ 116               		.stabs	"stream:P(0,48)=*(1,1)",64,0,23,22
+ 117               	.global	uart_printf_putchar
+ 118               		.type	uart_printf_putchar, @function
+ 119               	uart_printf_putchar:
+ 120               		.stabd	46,0,0
+   1:../../lib/uart_printf.c **** /*
+   2:../../lib/uart_printf.c ****  * uart printf functions
+   3:../../lib/uart_printf.c ****  * jwc :: jwcxz.com
+   4:../../lib/uart_printf.c ****  */
+   5:../../lib/uart_printf.c **** 
+   6:../../lib/uart_printf.c **** #include "stdio.h"
+   7:../../lib/uart_printf.c **** 
+   8:../../lib/uart_printf.c **** #include "config.h"
+   9:../../lib/uart_printf.c **** #include "uart.h"
+  10:../../lib/uart_printf.c **** #include "uart_rb.h"
+  11:../../lib/uart_printf.c **** #include "uart_printf.h"
+  12:../../lib/uart_printf.c **** 
+  13:../../lib/uart_printf.c **** int uart_printf_putchar(char var, FILE *stream);
+  14:../../lib/uart_printf.c **** 
+  15:../../lib/uart_printf.c **** static FILE uart_printf_stdout = FDEV_SETUP_STREAM(uart_printf_putchar, NULL, _FDEV_SETUP_WRITE);
+  16:../../lib/uart_printf.c **** 
+  17:../../lib/uart_printf.c **** 
+  18:../../lib/uart_printf.c **** void uart_printf_init(void) {
+  19:../../lib/uart_printf.c ****     stdout = &uart_printf_stdout;
+  20:../../lib/uart_printf.c **** }
+  21:../../lib/uart_printf.c **** 
+  22:../../lib/uart_printf.c **** 
+  23:../../lib/uart_printf.c **** int uart_printf_putchar(char var, FILE *stream) {
+ 121               		.stabn	68,0,23,.LM0-.LFBB1
+ 122               	.LM0:
+ 123               	.LFBB1:
+ 124               	/* prologue: function */
+ 125               	/* frame size = 0 */
+ 126               	/* stack size = 0 */
+ 127               	.L__stack_usage = 0
+  24:../../lib/uart_printf.c ****     //if (var == '\n') var = '\n';
+  25:../../lib/uart_printf.c ****     uart_rb_tx(var);
+ 128               		.stabn	68,0,25,.LM1-.LFBB1
+ 129               	.LM1:
+ 130 0000 0E94 0000 		call uart_rb_tx
+  26:../../lib/uart_printf.c ****     return 0;
+  27:../../lib/uart_printf.c **** }
+ 131               		.stabn	68,0,27,.LM2-.LFBB1
+ 132               	.LM2:
+ 133 0004 80E0      		ldi r24,0
+ 134 0006 90E0      		ldi r25,0
+ 135 0008 0895      		ret
+ 136               		.size	uart_printf_putchar, .-uart_printf_putchar
+ 137               	.Lscope1:
+ 138               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 139               		.stabd	78,0,0
+ 140               		.stabs	"uart_printf_init:F(0,47)",36,0,18,uart_printf_init
+ 141               	.global	uart_printf_init
+ 142               		.type	uart_printf_init, @function
+ 143               	uart_printf_init:
+ 144               		.stabd	46,0,0
+GAS LISTING /tmp/cc2jHdTw.s 			page 4
+
+
+  18:../../lib/uart_printf.c **** void uart_printf_init(void) {
+ 145               		.stabn	68,0,18,.LM3-.LFBB2
+ 146               	.LM3:
+ 147               	.LFBB2:
+ 148               	/* prologue: function */
+ 149               	/* frame size = 0 */
+ 150               	/* stack size = 0 */
+ 151               	.L__stack_usage = 0
+  19:../../lib/uart_printf.c ****     stdout = &uart_printf_stdout;
+ 152               		.stabn	68,0,19,.LM4-.LFBB2
+ 153               	.LM4:
+ 154 000a 80E0      		ldi r24,lo8(uart_printf_stdout)
+ 155 000c 90E0      		ldi r25,hi8(uart_printf_stdout)
+ 156 000e 9093 0000 		sts __iob+2+1,r25
+ 157 0012 8093 0000 		sts __iob+2,r24
+ 158 0016 0895      		ret
+ 159               		.size	uart_printf_init, .-uart_printf_init
+ 160               	.Lscope2:
+ 161               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 162               		.stabd	78,0,0
+ 163               		.data
+ 164               		.type	uart_printf_stdout, @object
+ 165               		.size	uart_printf_stdout, 14
+ 166               	uart_printf_stdout:
+ 167 0000 0000 00   		.zero	3
+ 168 0003 02        		.byte	2
+ 169 0004 0000 0000 		.zero	4
+ 170 0008 0000      		.word	gs(uart_printf_putchar)
+ 171 000a 0000      		.word	0
+ 172 000c 0000      		.word	0
+ 173               		.stabs	"uart_printf_stdout:S(1,1)",38,0,15,uart_printf_stdout
+ 174               		.text
+ 175               		.stabs	"",100,0,0,.Letext0
+ 176               	.Letext0:
+ 177               		.ident	"GCC: (GNU) 4.8.2"
+ 178               	.global __do_copy_data
+GAS LISTING /tmp/cc2jHdTw.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 uart_printf.c
+     /tmp/cc2jHdTw.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc2jHdTw.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc2jHdTw.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc2jHdTw.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc2jHdTw.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cc2jHdTw.s:119    .text:0000000000000000 uart_printf_putchar
+     /tmp/cc2jHdTw.s:143    .text:000000000000000a uart_printf_init
+     /tmp/cc2jHdTw.s:166    .data:0000000000000000 uart_printf_stdout
+
+UNDEFINED SYMBOLS
+uart_rb_tx
+__iob
+__do_copy_data

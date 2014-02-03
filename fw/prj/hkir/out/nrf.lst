@@ -1,0 +1,2569 @@
+GAS LISTING /tmp/ccHcWfNP.s 			page 1
+
+
+   1               		.file	"nrf.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/j/projects/acris/avr/prj/test-nrf/",100,0,2,.Ltext0
+   8               		.stabs	"../../lib/nrf.c",100,0,2,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  13               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,0,0
+  14               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  15               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  16               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  17               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  18               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  19               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  20               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  21               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  23               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  24               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  25               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  26               		.stabs	"short _Fract:t(0,15)=r(0,1);1;0;",128,0,0,0
+  27               		.stabs	"_Fract:t(0,16)=r(0,1);2;0;",128,0,0,0
+  28               		.stabs	"long _Fract:t(0,17)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"long long _Fract:t(0,18)=r(0,1);8;0;",128,0,0,0
+  30               		.stabs	"unsigned short _Fract:t(0,19)=r(0,1);1;0;",128,0,0,0
+  31               		.stabs	"unsigned _Fract:t(0,20)=r(0,1);2;0;",128,0,0,0
+  32               		.stabs	"unsigned long _Fract:t(0,21)=r(0,1);4;0;",128,0,0,0
+  33               		.stabs	"unsigned long long _Fract:t(0,22)=r(0,1);8;0;",128,0,0,0
+  34               		.stabs	"_Sat short _Fract:t(0,23)=r(0,1);1;0;",128,0,0,0
+  35               		.stabs	"_Sat _Fract:t(0,24)=r(0,1);2;0;",128,0,0,0
+  36               		.stabs	"_Sat long _Fract:t(0,25)=r(0,1);4;0;",128,0,0,0
+  37               		.stabs	"_Sat long long _Fract:t(0,26)=r(0,1);8;0;",128,0,0,0
+  38               		.stabs	"_Sat unsigned short _Fract:t(0,27)=r(0,1);1;0;",128,0,0,0
+  39               		.stabs	"_Sat unsigned _Fract:t(0,28)=r(0,1);2;0;",128,0,0,0
+  40               		.stabs	"_Sat unsigned long _Fract:t(0,29)=r(0,1);4;0;",128,0,0,0
+  41               		.stabs	"_Sat unsigned long long _Fract:t(0,30)=r(0,1);8;0;",128,0,0,0
+  42               		.stabs	"short _Accum:t(0,31)=r(0,1);2;0;",128,0,0,0
+  43               		.stabs	"_Accum:t(0,32)=r(0,1);4;0;",128,0,0,0
+  44               		.stabs	"long _Accum:t(0,33)=r(0,1);8;0;",128,0,0,0
+  45               		.stabs	"long long _Accum:t(0,34)=r(0,1);8;0;",128,0,0,0
+  46               		.stabs	"unsigned short _Accum:t(0,35)=r(0,1);2;0;",128,0,0,0
+  47               		.stabs	"unsigned _Accum:t(0,36)=r(0,1);4;0;",128,0,0,0
+  48               		.stabs	"unsigned long _Accum:t(0,37)=r(0,1);8;0;",128,0,0,0
+  49               		.stabs	"unsigned long long _Accum:t(0,38)=r(0,1);8;0;",128,0,0,0
+  50               		.stabs	"_Sat short _Accum:t(0,39)=r(0,1);2;0;",128,0,0,0
+  51               		.stabs	"_Sat _Accum:t(0,40)=r(0,1);4;0;",128,0,0,0
+  52               		.stabs	"_Sat long _Accum:t(0,41)=r(0,1);8;0;",128,0,0,0
+  53               		.stabs	"_Sat long long _Accum:t(0,42)=r(0,1);8;0;",128,0,0,0
+  54               		.stabs	"_Sat unsigned short _Accum:t(0,43)=r(0,1);2;0;",128,0,0,0
+  55               		.stabs	"_Sat unsigned _Accum:t(0,44)=r(0,1);4;0;",128,0,0,0
+  56               		.stabs	"_Sat unsigned long _Accum:t(0,45)=r(0,1);8;0;",128,0,0,0
+  57               		.stabs	"_Sat unsigned long long _Accum:t(0,46)=r(0,1);8;0;",128,0,0,0
+GAS LISTING /tmp/ccHcWfNP.s 			page 2
+
+
+  58               		.stabs	"void:t(0,47)=(0,47)",128,0,0,0
+  59               		.stabs	"./config.h",130,0,0,0
+  60               		.stabs	"../../inc/config_top.h",130,0,0,0
+  61               		.stabs	"/usr/avr/include/inttypes.h",130,0,0,0
+  62               		.stabs	"/usr/lib/gcc/avr/4.8.2/include/stdint.h",130,0,0,0
+  63               		.stabs	"/usr/avr/include/stdint.h",130,0,0,0
+  64               		.stabs	"int8_t:t(5,1)=(0,10)",128,0,121,0
+  65               		.stabs	"uint8_t:t(5,2)=(0,11)",128,0,122,0
+  66               		.stabs	"int16_t:t(5,3)=(0,1)",128,0,123,0
+  67               		.stabs	"uint16_t:t(5,4)=(0,4)",128,0,124,0
+  68               		.stabs	"int32_t:t(5,5)=(0,3)",128,0,125,0
+  69               		.stabs	"uint32_t:t(5,6)=(0,5)",128,0,126,0
+  70               		.stabs	"int64_t:t(5,7)=(0,6)",128,0,128,0
+  71               		.stabs	"uint64_t:t(5,8)=(0,7)",128,0,129,0
+  72               		.stabs	"intptr_t:t(5,9)=(5,3)",128,0,142,0
+  73               		.stabs	"uintptr_t:t(5,10)=(5,4)",128,0,147,0
+  74               		.stabs	"int_least8_t:t(5,11)=(5,1)",128,0,159,0
+  75               		.stabs	"uint_least8_t:t(5,12)=(5,2)",128,0,164,0
+  76               		.stabs	"int_least16_t:t(5,13)=(5,3)",128,0,169,0
+  77               		.stabs	"uint_least16_t:t(5,14)=(5,4)",128,0,174,0
+  78               		.stabs	"int_least32_t:t(5,15)=(5,5)",128,0,179,0
+  79               		.stabs	"uint_least32_t:t(5,16)=(5,6)",128,0,184,0
+  80               		.stabs	"int_least64_t:t(5,17)=(5,7)",128,0,192,0
+  81               		.stabs	"uint_least64_t:t(5,18)=(5,8)",128,0,199,0
+  82               		.stabs	"int_fast8_t:t(5,19)=(5,1)",128,0,213,0
+  83               		.stabs	"uint_fast8_t:t(5,20)=(5,2)",128,0,218,0
+  84               		.stabs	"int_fast16_t:t(5,21)=(5,3)",128,0,223,0
+  85               		.stabs	"uint_fast16_t:t(5,22)=(5,4)",128,0,228,0
+  86               		.stabs	"int_fast32_t:t(5,23)=(5,5)",128,0,233,0
+  87               		.stabs	"uint_fast32_t:t(5,24)=(5,6)",128,0,238,0
+  88               		.stabs	"int_fast64_t:t(5,25)=(5,7)",128,0,246,0
+  89               		.stabs	"uint_fast64_t:t(5,26)=(5,8)",128,0,253,0
+  90               		.stabs	"intmax_t:t(5,27)=(5,7)",128,0,273,0
+  91               		.stabs	"uintmax_t:t(5,28)=(5,8)",128,0,278,0
+  92               		.stabn	162,0,0,0
+  93               		.stabn	162,0,0,0
+  94               		.stabs	"int_farptr_t:t(3,1)=(5,5)",128,0,77,0
+  95               		.stabs	"uint_farptr_t:t(3,2)=(5,6)",128,0,81,0
+  96               		.stabn	162,0,0,0
+  97               		.stabs	"/usr/avr/include/avr/io.h",130,0,0,0
+  98               		.stabs	"/usr/avr/include/avr/fuse.h",130,0,0,0
+  99               		.stabs	"__fuse_t:t(7,1)=(7,2)=s3low:(0,11),0,8;high:(0,11),8,8;extended:(0,11),16,8;;",128,0,244,0
+ 100               		.stabn	162,0,0,0
+ 101               		.stabn	162,0,0,0
+ 102               		.stabs	"/usr/avr/include/avr/pgmspace.h",130,0,0,0
+ 103               		.stabs	"/usr/lib/gcc/avr/4.8.2/include/stddef.h",130,0,0,0
+ 104               		.stabs	"size_t:t(9,1)=(0,4)",128,0,212,0
+ 105               		.stabn	162,0,0,0
+ 106               		.stabn	162,0,0,0
+ 107               		.stabn	162,0,0,0
+ 108               		.stabn	162,0,0,0
+ 109               		.stabs	"../../inc/nrf.h",130,0,0,0
+ 110               		.stabs	" :T(10,1)=@s8;eNRF_MODE_OFF:0,NRF_MODE_TX:1,NRF_MODE_RX:2,;",128,0,0,0
+ 111               		.stabs	"nrf_mode_t:t(10,2)=(10,1)",128,0,14,0
+ 112               		.stabn	162,0,0,0
+ 113               		.stabs	"nrf_enable_irq:F(0,47)",36,0,69,nrf_enable_irq
+ 114               	.global	nrf_enable_irq
+GAS LISTING /tmp/ccHcWfNP.s 			page 3
+
+
+ 115               		.type	nrf_enable_irq, @function
+ 116               	nrf_enable_irq:
+ 117               		.stabd	46,0,0
+   1:../../lib/nrf.c **** /*
+   2:../../lib/nrf.c ****  * NRF24L01+ driver targeted at single-transmitter operations
+   3:../../lib/nrf.c ****  * jwc :: jwcxz.com
+   4:../../lib/nrf.c ****  */
+   5:../../lib/nrf.c **** 
+   6:../../lib/nrf.c **** #include "config.h"
+   7:../../lib/nrf.c **** #include "nrf.h"
+   8:../../lib/nrf.c **** #include "nrfspi.h"
+   9:../../lib/nrf.c **** 
+  10:../../lib/nrf.c **** uint8_t *rx_packet_buffer;
+  11:../../lib/nrf.c **** 
+  12:../../lib/nrf.c **** uint8_t volatile packet_ready = 0;
+  13:../../lib/nrf.c **** 
+  14:../../lib/nrf.c **** // initialization
+  15:../../lib/nrf.c **** void nrf_init(uint8_t *rxpbuf) {
+  16:../../lib/nrf.c ****     // turn off wireless communication
+  17:../../lib/nrf.c ****     nrf_ce_off();
+  18:../../lib/nrf.c ****     // set up nrf chip enable
+  19:../../lib/nrf.c ****     _ON(NRF_CE_DDR, NRF_CE_PIN);
+  20:../../lib/nrf.c **** 
+  21:../../lib/nrf.c ****     // initialize SPI layer
+  22:../../lib/nrf.c ****     nrfspi_init();
+  23:../../lib/nrf.c ****     nrfspi_enable();
+  24:../../lib/nrf.c **** 
+  25:../../lib/nrf.c ****     // register buffer addresses
+  26:../../lib/nrf.c ****     rx_packet_buffer = rxpbuf;
+  27:../../lib/nrf.c **** 
+  28:../../lib/nrf.c ****     // set up interrupt with pull-up for falling edge
+  29:../../lib/nrf.c ****     _OFF(NRF_IRQ_DDR, NRF_IRQ_PIN);
+  30:../../lib/nrf.c ****     _ON(NRF_IRQ_PRT, NRF_IRQ_PIN);
+  31:../../lib/nrf.c ****     EICRA = _BV(ISC01);
+  32:../../lib/nrf.c **** 
+  33:../../lib/nrf.c ****     // wait for NRF_REG_CONFIG register to have some of its initial bits set
+  34:../../lib/nrf.c ****     // XXX: the datasheet notes that the NRF_BIT_CRC_EN bit is set at power-up
+  35:../../lib/nrf.c ****     // and because it's also set in NRF_INI_CONFIG, this will work for both the
+  36:../../lib/nrf.c ****     // case when the entire system is powered up from off and when just the
+  37:../../lib/nrf.c ****     // microcontroller is reset.
+  38:../../lib/nrf.c ****     // 
+  39:../../lib/nrf.c ****     // This is a stupid and cheap hack, but AFAICT there's no way to get
+  40:../../lib/nrf.c ****     // surefire information when the chip is ready for initialization.  I wish
+  41:../../lib/nrf.c ****     // it would bring MISO low or something when it's ready.  Reading preset
+  42:../../lib/nrf.c ****     // addresses doesn't work since they might be changed, the status register
+  43:../../lib/nrf.c ****     // can be different depending on whether the system is powering up or the
+  44:../../lib/nrf.c ****     // micro is reset, and most of the others are initialized to all 0 or
+  45:../../lib/nrf.c ****     // change a lot from the default settings.  The other candidate for this is
+  46:../../lib/nrf.c ****     // NRF_REG_RF_SETUP, whose default is 0x7 and initialization is 0x3
+  47:../../lib/nrf.c ****     // (diference is NRF_BIT_RF_DR_HIGH)
+  48:../../lib/nrf.c ****     while ( !(nrf_regrd(NRF_REG_CONFIG) & _BV(NRF_BIT_EN_CRC)) );
+  49:../../lib/nrf.c **** 
+  50:../../lib/nrf.c ****     // perform system configuration
+  51:../../lib/nrf.c ****     nrf_regwr(NRF_REG_CONFIG, NRF_INI_CONFIG);
+  52:../../lib/nrf.c ****     nrf_regwr(NRF_REG_SETUP_AW, NRF_INI_SETUP_AW);
+  53:../../lib/nrf.c ****     nrf_regwr(NRF_REG_SETUP_RETR, NRF_INI_SETUP_RETR);
+  54:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RF_SETUP, NRF_INI_RF_SETUP);
+GAS LISTING /tmp/ccHcWfNP.s 			page 4
+
+
+  55:../../lib/nrf.c **** 
+  56:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_AA, NRF_INI_EN_AA);
+  57:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_RXADDR, NRF_INI_EN_RXADDR);
+  58:../../lib/nrf.c **** 
+  59:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P0, NRF_INI_RX_PW_Px);
+  60:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P1, NRF_INI_RX_PW_Px);
+  61:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P2, NRF_INI_RX_PW_Px);
+  62:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P3, NRF_INI_RX_PW_Px);
+  63:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P4, NRF_INI_RX_PW_Px);
+  64:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P5, NRF_INI_RX_PW_Px);
+  65:../../lib/nrf.c **** }
+  66:../../lib/nrf.c **** 
+  67:../../lib/nrf.c **** 
+  68:../../lib/nrf.c **** // application-level commands
+  69:../../lib/nrf.c **** void nrf_enable_irq(void) {
+ 118               		.stabn	68,0,69,.LM0-.LFBB1
+ 119               	.LM0:
+ 120               	.LFBB1:
+ 121               	/* prologue: function */
+ 122               	/* frame size = 0 */
+ 123               	/* stack size = 0 */
+ 124               	.L__stack_usage = 0
+  70:../../lib/nrf.c ****     _ON(EIFR, INTF0);
+ 125               		.stabn	68,0,70,.LM1-.LFBB1
+ 126               	.LM1:
+ 127 0000 E09A      		sbi 0x1c,0
+  71:../../lib/nrf.c ****     _ON(EIMSK, INT0);
+ 128               		.stabn	68,0,71,.LM2-.LFBB1
+ 129               	.LM2:
+ 130 0002 E89A      		sbi 0x1d,0
+ 131 0004 0895      		ret
+ 132               		.size	nrf_enable_irq, .-nrf_enable_irq
+ 133               	.Lscope1:
+ 134               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 135               		.stabd	78,0,0
+ 136               		.stabs	"nrf_disable_irq:F(0,47)",36,0,74,nrf_disable_irq
+ 137               	.global	nrf_disable_irq
+ 138               		.type	nrf_disable_irq, @function
+ 139               	nrf_disable_irq:
+ 140               		.stabd	46,0,0
+  72:../../lib/nrf.c **** }
+  73:../../lib/nrf.c **** 
+  74:../../lib/nrf.c **** void nrf_disable_irq(void) {
+ 141               		.stabn	68,0,74,.LM3-.LFBB2
+ 142               	.LM3:
+ 143               	.LFBB2:
+ 144               	/* prologue: function */
+ 145               	/* frame size = 0 */
+ 146               	/* stack size = 0 */
+ 147               	.L__stack_usage = 0
+  75:../../lib/nrf.c ****     _OFF(EIMSK, INT0);
+ 148               		.stabn	68,0,75,.LM4-.LFBB2
+ 149               	.LM4:
+ 150 0006 E898      		cbi 0x1d,0
+  76:../../lib/nrf.c ****     packet_ready = 0;
+ 151               		.stabn	68,0,76,.LM5-.LFBB2
+ 152               	.LM5:
+GAS LISTING /tmp/ccHcWfNP.s 			page 5
+
+
+ 153 0008 1092 0000 		sts packet_ready,__zero_reg__
+ 154 000c 0895      		ret
+ 155               		.size	nrf_disable_irq, .-nrf_disable_irq
+ 156               	.Lscope2:
+ 157               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 158               		.stabd	78,0,0
+ 159               		.stabs	"nrf_wait_for_rxpacket:F(0,47)",36,0,178,nrf_wait_for_rxpacket
+ 160               	.global	nrf_wait_for_rxpacket
+ 161               		.type	nrf_wait_for_rxpacket, @function
+ 162               	nrf_wait_for_rxpacket:
+ 163               		.stabd	46,0,0
+  77:../../lib/nrf.c **** }
+  78:../../lib/nrf.c **** 
+  79:../../lib/nrf.c **** 
+  80:../../lib/nrf.c **** void nrf_set_channel(uint8_t channel) {
+  81:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RF_CH, ( (channel & 0x7F) << NRF_BIT_RF_CH60 ) );
+  82:../../lib/nrf.c **** }
+  83:../../lib/nrf.c **** 
+  84:../../lib/nrf.c **** void nrf_set_power(uint8_t pwr) {
+  85:../../lib/nrf.c ****     uint8_t v = nrf_regrd(NRF_REG_RF_SETUP);
+  86:../../lib/nrf.c ****     v &= ~(0x3 << NRF_BIT_RF_PWR21);
+  87:../../lib/nrf.c ****     v |= pwr & (0x3 << NRF_BIT_RF_PWR21);
+  88:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RF_SETUP, v);
+  89:../../lib/nrf.c **** }
+  90:../../lib/nrf.c **** 
+  91:../../lib/nrf.c **** void nrf_enable_pipe(uint8_t pipe, uint8_t *addr) {
+  92:../../lib/nrf.c ****     uint8_t v;
+  93:../../lib/nrf.c **** 
+  94:../../lib/nrf.c ****     // set payload width for that pipe
+  95:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P0 + pipe, COM_PL_SIZE);
+  96:../../lib/nrf.c **** 
+  97:../../lib/nrf.c ****     // enable auto-ack on pipe
+  98:../../lib/nrf.c ****     v = nrf_regrd(NRF_REG_EN_AA);
+  99:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_AA, v | _BV(pipe));
+ 100:../../lib/nrf.c **** 
+ 101:../../lib/nrf.c ****     // enable reception on the selected pipe
+ 102:../../lib/nrf.c ****     v = nrf_regrd(NRF_REG_EN_RXADDR);
+ 103:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_RXADDR, v | _BV(pipe));
+ 104:../../lib/nrf.c **** 
+ 105:../../lib/nrf.c ****     // set address
+ 106:../../lib/nrf.c ****     if (pipe <= 1) {
+ 107:../../lib/nrf.c ****         // use full pipe address
+ 108:../../lib/nrf.c ****         nrf_regwr_long(NRF_REG_RX_ADDR_P0 + pipe, COM_AD_SIZE, addr);
+ 109:../../lib/nrf.c ****     } else {
+ 110:../../lib/nrf.c ****         // use short pipe address
+ 111:../../lib/nrf.c ****         nrf_regwr(NRF_REG_RX_ADDR_P0 + pipe, addr[0]);
+ 112:../../lib/nrf.c ****     }
+ 113:../../lib/nrf.c **** }
+ 114:../../lib/nrf.c **** 
+ 115:../../lib/nrf.c **** void nrf_disable_pipe(uint8_t pipe) {
+ 116:../../lib/nrf.c ****     uint8_t v = nrf_regrd(NRF_REG_EN_RXADDR);
+ 117:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_RXADDR, v & ~_BV(pipe));
+ 118:../../lib/nrf.c **** }
+ 119:../../lib/nrf.c **** 
+ 120:../../lib/nrf.c **** 
+ 121:../../lib/nrf.c **** uint8_t nrf_transmit_packet(uint8_t *addr, uint8_t *buf) {
+ 122:../../lib/nrf.c ****     uint8_t ack;
+GAS LISTING /tmp/ccHcWfNP.s 			page 6
+
+
+ 123:../../lib/nrf.c **** 
+ 124:../../lib/nrf.c ****     // switch to transmit mode
+ 125:../../lib/nrf.c ****     nrf_ce_off();
+ 126:../../lib/nrf.c ****     nrf_setmode(NRF_MODE_TX);
+ 127:../../lib/nrf.c **** 
+ 128:../../lib/nrf.c ****     // set transmit address
+ 129:../../lib/nrf.c ****     nrf_regwr_long(NRF_REG_RX_ADDR_P0, COM_AD_SIZE, addr);
+ 130:../../lib/nrf.c ****     nrf_regwr_long(NRF_REG_TX_ADDR, COM_AD_SIZE, addr);
+ 131:../../lib/nrf.c **** 
+ 132:../../lib/nrf.c **** 
+ 133:../../lib/nrf.c ****     // load up the FIFO
+ 134:../../lib/nrf.c ****     nrf_txpayload(buf);
+ 135:../../lib/nrf.c **** 
+ 136:../../lib/nrf.c ****     // pulse CE to perform transmit
+ 137:../../lib/nrf.c ****     nrf_ce_on();
+ 138:../../lib/nrf.c ****     _delay_us(NRF_TX_PULSE_MIN_US);
+ 139:../../lib/nrf.c ****     nrf_ce_off();
+ 140:../../lib/nrf.c **** 
+ 141:../../lib/nrf.c ****     // wait until transmit complete
+ 142:../../lib/nrf.c ****     while ( !(nrf_status() & (_BV(NRF_BIT_TX_DS)|_BV(NRF_BIT_MAX_RT))) );
+ 143:../../lib/nrf.c **** 
+ 144:../../lib/nrf.c ****     if ( nrf_status() & _BV(NRF_BIT_TX_DS) ) {
+ 145:../../lib/nrf.c ****         ack = 1;
+ 146:../../lib/nrf.c ****     } else {
+ 147:../../lib/nrf.c ****         ack = 0;
+ 148:../../lib/nrf.c ****     }
+ 149:../../lib/nrf.c **** 
+ 150:../../lib/nrf.c ****     // clear bits
+ 151:../../lib/nrf.c ****     nrf_regwr(NRF_REG_STATUS, nrf_status() | _BV(NRF_BIT_TX_DS) | _BV(NRF_BIT_MAX_RT));
+ 152:../../lib/nrf.c **** 
+ 153:../../lib/nrf.c ****     // switch back to receive mode
+ 154:../../lib/nrf.c ****     nrf_setmode(NRF_MODE_RX);
+ 155:../../lib/nrf.c ****     nrf_ce_on();
+ 156:../../lib/nrf.c ****     
+ 157:../../lib/nrf.c ****     // return 1 for successful transmission, 0 otherwise
+ 158:../../lib/nrf.c ****     return ack;
+ 159:../../lib/nrf.c **** }
+ 160:../../lib/nrf.c **** 
+ 161:../../lib/nrf.c **** 
+ 162:../../lib/nrf.c **** void nrf_start_receiver(void) {
+ 163:../../lib/nrf.c ****     packet_ready = 0;
+ 164:../../lib/nrf.c **** 
+ 165:../../lib/nrf.c ****     nrf_setmode(NRF_MODE_RX);
+ 166:../../lib/nrf.c ****     nrf_enable_irq();
+ 167:../../lib/nrf.c ****     nrf_ce_on();
+ 168:../../lib/nrf.c **** }
+ 169:../../lib/nrf.c **** 
+ 170:../../lib/nrf.c **** 
+ 171:../../lib/nrf.c **** void nrf_stop_receiver(void) {
+ 172:../../lib/nrf.c ****     nrf_ce_off();
+ 173:../../lib/nrf.c ****     nrf_flushrx();
+ 174:../../lib/nrf.c ****     nrf_disable_irq();
+ 175:../../lib/nrf.c **** }
+ 176:../../lib/nrf.c **** 
+ 177:../../lib/nrf.c **** 
+ 178:../../lib/nrf.c **** void nrf_wait_for_rxpacket(void) {
+ 164               		.stabn	68,0,178,.LM6-.LFBB3
+GAS LISTING /tmp/ccHcWfNP.s 			page 7
+
+
+ 165               	.LM6:
+ 166               	.LFBB3:
+ 167               	/* prologue: function */
+ 168               	/* frame size = 0 */
+ 169               	/* stack size = 0 */
+ 170               	.L__stack_usage = 0
+ 171               	.L5:
+ 179:../../lib/nrf.c ****     while (!packet_ready);
+ 172               		.stabn	68,0,179,.LM7-.LFBB3
+ 173               	.LM7:
+ 174 000e 8091 0000 		lds r24,packet_ready
+ 175 0012 8823      		tst r24
+ 176 0014 01F0      		breq .L5
+ 177               	/* epilogue start */
+ 180:../../lib/nrf.c **** }
+ 178               		.stabn	68,0,180,.LM8-.LFBB3
+ 179               	.LM8:
+ 180 0016 0895      		ret
+ 181               		.size	nrf_wait_for_rxpacket, .-nrf_wait_for_rxpacket
+ 182               	.Lscope3:
+ 183               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 184               		.stabd	78,0,0
+ 185               		.stabs	"nrf_isready_packet:F(5,2)",36,0,182,nrf_isready_packet
+ 186               	.global	nrf_isready_packet
+ 187               		.type	nrf_isready_packet, @function
+ 188               	nrf_isready_packet:
+ 189               		.stabd	46,0,0
+ 181:../../lib/nrf.c **** 
+ 182:../../lib/nrf.c **** uint8_t nrf_isready_packet(void) {
+ 190               		.stabn	68,0,182,.LM9-.LFBB4
+ 191               	.LM9:
+ 192               	.LFBB4:
+ 193               	/* prologue: function */
+ 194               	/* frame size = 0 */
+ 195               	/* stack size = 0 */
+ 196               	.L__stack_usage = 0
+ 183:../../lib/nrf.c ****     return packet_ready;
+ 197               		.stabn	68,0,183,.LM10-.LFBB4
+ 198               	.LM10:
+ 199 0018 8091 0000 		lds r24,packet_ready
+ 184:../../lib/nrf.c **** }
+ 200               		.stabn	68,0,184,.LM11-.LFBB4
+ 201               	.LM11:
+ 202 001c 0895      		ret
+ 203               		.size	nrf_isready_packet, .-nrf_isready_packet
+ 204               	.Lscope4:
+ 205               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 206               		.stabd	78,0,0
+ 207               		.stabs	"nrf_accept_packet:F(0,47)",36,0,186,nrf_accept_packet
+ 208               	.global	nrf_accept_packet
+ 209               		.type	nrf_accept_packet, @function
+ 210               	nrf_accept_packet:
+ 211               		.stabd	46,0,0
+ 185:../../lib/nrf.c **** 
+ 186:../../lib/nrf.c **** void nrf_accept_packet(void) {
+ 212               		.stabn	68,0,186,.LM12-.LFBB5
+ 213               	.LM12:
+GAS LISTING /tmp/ccHcWfNP.s 			page 8
+
+
+ 214               	.LFBB5:
+ 215               	/* prologue: function */
+ 216               	/* frame size = 0 */
+ 217               	/* stack size = 0 */
+ 218               	.L__stack_usage = 0
+ 187:../../lib/nrf.c ****     packet_ready = 0;
+ 219               		.stabn	68,0,187,.LM13-.LFBB5
+ 220               	.LM13:
+ 221 001e 1092 0000 		sts packet_ready,__zero_reg__
+ 188:../../lib/nrf.c ****     nrf_enable_irq();
+ 222               		.stabn	68,0,188,.LM14-.LFBB5
+ 223               	.LM14:
+ 224 0022 0C94 0000 		jmp nrf_enable_irq
+ 225               		.size	nrf_accept_packet, .-nrf_accept_packet
+ 226               	.Lscope5:
+ 227               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 228               		.stabd	78,0,0
+ 229               		.stabs	"nrf_ce_on:F(0,47)",36,0,221,nrf_ce_on
+ 230               	.global	nrf_ce_on
+ 231               		.type	nrf_ce_on, @function
+ 232               	nrf_ce_on:
+ 233               		.stabd	46,0,0
+ 189:../../lib/nrf.c **** }
+ 190:../../lib/nrf.c **** 
+ 191:../../lib/nrf.c **** 
+ 192:../../lib/nrf.c **** // nrf24l01+ interrupt handler
+ 193:../../lib/nrf.c **** ISR(INT0_vect) {
+ 194:../../lib/nrf.c ****     uint8_t status;
+ 195:../../lib/nrf.c **** 
+ 196:../../lib/nrf.c ****     // when configured as a receiver, indicates that a packet was received by
+ 197:../../lib/nrf.c ****     // the device and we must read it out
+ 198:../../lib/nrf.c **** 
+ 199:../../lib/nrf.c ****     // shut off receiver
+ 200:../../lib/nrf.c ****     nrf_ce_off();
+ 201:../../lib/nrf.c **** 
+ 202:../../lib/nrf.c ****     // shut off interrupt
+ 203:../../lib/nrf.c ****     nrf_disable_irq();
+ 204:../../lib/nrf.c **** 
+ 205:../../lib/nrf.c ****     // read out data into buffer
+ 206:../../lib/nrf.c ****     status = nrf_rxpayload(rx_packet_buffer);
+ 207:../../lib/nrf.c ****     dbg_set(status & 0xF);
+ 208:../../lib/nrf.c **** 
+ 209:../../lib/nrf.c ****     // clear RX flag
+ 210:../../lib/nrf.c ****     nrf_regwr(NRF_REG_STATUS, status | _BV(NRF_BIT_RX_DR));
+ 211:../../lib/nrf.c **** 
+ 212:../../lib/nrf.c ****     // report that the packet is ready
+ 213:../../lib/nrf.c ****     packet_ready = 1;
+ 214:../../lib/nrf.c **** 
+ 215:../../lib/nrf.c ****     // re-enable receiver
+ 216:../../lib/nrf.c ****     nrf_ce_on();
+ 217:../../lib/nrf.c **** }
+ 218:../../lib/nrf.c **** 
+ 219:../../lib/nrf.c **** 
+ 220:../../lib/nrf.c **** // chip commands
+ 221:../../lib/nrf.c **** void nrf_ce_on(void) {
+ 234               		.stabn	68,0,221,.LM15-.LFBB6
+ 235               	.LM15:
+GAS LISTING /tmp/ccHcWfNP.s 			page 9
+
+
+ 236               	.LFBB6:
+ 237               	/* prologue: function */
+ 238               	/* frame size = 0 */
+ 239               	/* stack size = 0 */
+ 240               	.L__stack_usage = 0
+ 222:../../lib/nrf.c ****     _ON(NRF_CE_PRT, NRF_CE_PIN);
+ 241               		.stabn	68,0,222,.LM16-.LFBB6
+ 242               	.LM16:
+ 243 0026 289A      		sbi 0x5,0
+ 244 0028 0895      		ret
+ 245               		.size	nrf_ce_on, .-nrf_ce_on
+ 246               	.Lscope6:
+ 247               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 248               		.stabd	78,0,0
+ 249               		.stabs	"nrf_ce_off:F(0,47)",36,0,226,nrf_ce_off
+ 250               	.global	nrf_ce_off
+ 251               		.type	nrf_ce_off, @function
+ 252               	nrf_ce_off:
+ 253               		.stabd	46,0,0
+ 223:../../lib/nrf.c **** }
+ 224:../../lib/nrf.c **** 
+ 225:../../lib/nrf.c **** 
+ 226:../../lib/nrf.c **** void nrf_ce_off(void) {
+ 254               		.stabn	68,0,226,.LM17-.LFBB7
+ 255               	.LM17:
+ 256               	.LFBB7:
+ 257               	/* prologue: function */
+ 258               	/* frame size = 0 */
+ 259               	/* stack size = 0 */
+ 260               	.L__stack_usage = 0
+ 227:../../lib/nrf.c ****     _OFF(NRF_CE_PRT, NRF_CE_PIN);
+ 261               		.stabn	68,0,227,.LM18-.LFBB7
+ 262               	.LM18:
+ 263 002a 2898      		cbi 0x5,0
+ 264 002c 0895      		ret
+ 265               		.size	nrf_ce_off, .-nrf_ce_off
+ 266               	.Lscope7:
+ 267               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 268               		.stabd	78,0,0
+ 269               		.stabs	"nrf_txpayload:F(5,2)",36,0,257,nrf_txpayload
+ 270               		.stabs	"buf:P(0,48)=*(5,2)",64,0,257,28
+ 271               	.global	nrf_txpayload
+ 272               		.type	nrf_txpayload, @function
+ 273               	nrf_txpayload:
+ 274               		.stabd	46,0,0
+ 228:../../lib/nrf.c **** }
+ 229:../../lib/nrf.c **** 
+ 230:../../lib/nrf.c **** 
+ 231:../../lib/nrf.c **** void nrf_setmode(nrf_mode_t mode) {
+ 232:../../lib/nrf.c ****     if (mode == NRF_MODE_TX) {
+ 233:../../lib/nrf.c ****         nrf_flushtx();
+ 234:../../lib/nrf.c **** 
+ 235:../../lib/nrf.c ****         nrf_regwr(NRF_REG_STATUS, _BV(NRF_BIT_RX_DR) | _BV(NRF_BIT_TX_DS) |
+ 236:../../lib/nrf.c ****                                   _BV(NRF_BIT_MAX_RT));
+ 237:../../lib/nrf.c **** 
+ 238:../../lib/nrf.c ****         nrf_regwr(NRF_REG_CONFIG, (NRF_INI_CONFIG & ~(_BV(NRF_BIT_PRIM_RX))) |
+ 239:../../lib/nrf.c ****                                   _BV(NRF_BIT_PWR_UP));
+GAS LISTING /tmp/ccHcWfNP.s 			page 10
+
+
+ 240:../../lib/nrf.c ****         _delay_us(130);
+ 241:../../lib/nrf.c ****     } else if (mode == NRF_MODE_RX ) {
+ 242:../../lib/nrf.c ****         nrf_flushrx();
+ 243:../../lib/nrf.c **** 
+ 244:../../lib/nrf.c ****         nrf_regwr(NRF_REG_STATUS, _BV(NRF_BIT_RX_DR) | _BV(NRF_BIT_TX_DS)
+ 245:../../lib/nrf.c ****                                   | _BV(NRF_BIT_MAX_RT));
+ 246:../../lib/nrf.c **** 
+ 247:../../lib/nrf.c ****         nrf_regwr(NRF_REG_CONFIG, NRF_INI_CONFIG | _BV(NRF_BIT_PWR_UP) |
+ 248:../../lib/nrf.c ****                                   _BV(NRF_BIT_PRIM_RX));
+ 249:../../lib/nrf.c ****         _delay_us(130);
+ 250:../../lib/nrf.c ****     } else {
+ 251:../../lib/nrf.c ****         nrf_ce_off();
+ 252:../../lib/nrf.c ****         nrf_regwr(NRF_REG_CONFIG, NRF_INI_CONFIG & ~(_BV(NRF_BIT_PWR_UP)));
+ 253:../../lib/nrf.c ****     }
+ 254:../../lib/nrf.c **** }
+ 255:../../lib/nrf.c **** 
+ 256:../../lib/nrf.c **** 
+ 257:../../lib/nrf.c **** uint8_t nrf_txpayload(uint8_t *buf) {
+ 275               		.stabn	68,0,257,.LM19-.LFBB8
+ 276               	.LM19:
+ 277               	.LFBB8:
+ 278 002e 1F93      		push r17
+ 279 0030 CF93      		push r28
+ 280 0032 DF93      		push r29
+ 281               	/* prologue: function */
+ 282               	/* frame size = 0 */
+ 283               	/* stack size = 3 */
+ 284               	.L__stack_usage = 3
+ 285 0034 EC01      		movw r28,r24
+ 258:../../lib/nrf.c ****     uint8_t status;
+ 259:../../lib/nrf.c **** 
+ 260:../../lib/nrf.c ****     nrfspi_cs_en();
+ 286               		.stabn	68,0,260,.LM20-.LFBB8
+ 287               	.LM20:
+ 288 0036 0E94 0000 		call nrfspi_cs_en
+ 261:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_TXPLW);
+ 289               		.stabn	68,0,261,.LM21-.LFBB8
+ 290               	.LM21:
+ 291 003a 80EA      		ldi r24,lo8(-96)
+ 292 003c 0E94 0000 		call nrfspi_txrx_byte
+ 293 0040 182F      		mov r17,r24
+ 262:../../lib/nrf.c ****     nrfspi_txrx(COM_PL_SIZE, buf, 0);
+ 294               		.stabn	68,0,262,.LM22-.LFBB8
+ 295               	.LM22:
+ 296 0042 40E0      		ldi r20,0
+ 297 0044 50E0      		ldi r21,0
+ 298 0046 BE01      		movw r22,r28
+ 299 0048 89E1      		ldi r24,lo8(25)
+ 300 004a 0E94 0000 		call nrfspi_txrx
+ 263:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 301               		.stabn	68,0,263,.LM23-.LFBB8
+ 302               	.LM23:
+ 303 004e 0E94 0000 		call nrfspi_cs_ds
+ 264:../../lib/nrf.c **** 
+ 265:../../lib/nrf.c ****     return status;
+ 266:../../lib/nrf.c **** }
+ 304               		.stabn	68,0,266,.LM24-.LFBB8
+GAS LISTING /tmp/ccHcWfNP.s 			page 11
+
+
+ 305               	.LM24:
+ 306 0052 812F      		mov r24,r17
+ 307               	/* epilogue start */
+ 308 0054 DF91      		pop r29
+ 309 0056 CF91      		pop r28
+ 310 0058 1F91      		pop r17
+ 311 005a 0895      		ret
+ 312               		.size	nrf_txpayload, .-nrf_txpayload
+ 313               		.stabs	"status:r(5,2)",64,0,258,17
+ 314               		.stabn	192,0,0,.LFBB8-.LFBB8
+ 315               		.stabn	224,0,0,.Lscope8-.LFBB8
+ 316               	.Lscope8:
+ 317               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 318               		.stabd	78,0,0
+ 319               		.stabs	"nrf_rxpayload:F(5,2)",36,0,269,nrf_rxpayload
+ 320               		.stabs	"buf:P(0,48)",64,0,269,28
+ 321               	.global	nrf_rxpayload
+ 322               		.type	nrf_rxpayload, @function
+ 323               	nrf_rxpayload:
+ 324               		.stabd	46,0,0
+ 267:../../lib/nrf.c **** 
+ 268:../../lib/nrf.c **** 
+ 269:../../lib/nrf.c **** uint8_t nrf_rxpayload(uint8_t *buf) {
+ 325               		.stabn	68,0,269,.LM25-.LFBB9
+ 326               	.LM25:
+ 327               	.LFBB9:
+ 328 005c 1F93      		push r17
+ 329 005e CF93      		push r28
+ 330 0060 DF93      		push r29
+ 331               	/* prologue: function */
+ 332               	/* frame size = 0 */
+ 333               	/* stack size = 3 */
+ 334               	.L__stack_usage = 3
+ 335 0062 EC01      		movw r28,r24
+ 270:../../lib/nrf.c ****     uint8_t status;
+ 271:../../lib/nrf.c **** 
+ 272:../../lib/nrf.c ****     nrfspi_cs_en();
+ 336               		.stabn	68,0,272,.LM26-.LFBB9
+ 337               	.LM26:
+ 338 0064 0E94 0000 		call nrfspi_cs_en
+ 273:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_RXPLR);
+ 339               		.stabn	68,0,273,.LM27-.LFBB9
+ 340               	.LM27:
+ 341 0068 81E6      		ldi r24,lo8(97)
+ 342 006a 0E94 0000 		call nrfspi_txrx_byte
+ 343 006e 182F      		mov r17,r24
+ 274:../../lib/nrf.c ****     nrfspi_txrx(COM_PL_SIZE, buf, buf);
+ 344               		.stabn	68,0,274,.LM28-.LFBB9
+ 345               	.LM28:
+ 346 0070 AE01      		movw r20,r28
+ 347 0072 BE01      		movw r22,r28
+ 348 0074 89E1      		ldi r24,lo8(25)
+ 349 0076 0E94 0000 		call nrfspi_txrx
+ 275:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 350               		.stabn	68,0,275,.LM29-.LFBB9
+ 351               	.LM29:
+ 352 007a 0E94 0000 		call nrfspi_cs_ds
+GAS LISTING /tmp/ccHcWfNP.s 			page 12
+
+
+ 276:../../lib/nrf.c **** 
+ 277:../../lib/nrf.c ****     return status;
+ 278:../../lib/nrf.c **** }
+ 353               		.stabn	68,0,278,.LM30-.LFBB9
+ 354               	.LM30:
+ 355 007e 812F      		mov r24,r17
+ 356               	/* epilogue start */
+ 357 0080 DF91      		pop r29
+ 358 0082 CF91      		pop r28
+ 359 0084 1F91      		pop r17
+ 360 0086 0895      		ret
+ 361               		.size	nrf_rxpayload, .-nrf_rxpayload
+ 362               		.stabs	"status:r(5,2)",64,0,270,17
+ 363               		.stabn	192,0,0,.LFBB9-.LFBB9
+ 364               		.stabn	224,0,0,.Lscope9-.LFBB9
+ 365               	.Lscope9:
+ 366               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 367               		.stabd	78,0,0
+ 368               		.stabs	"nrf_regwr_long:F(5,2)",36,0,281,nrf_regwr_long
+ 369               		.stabs	"reg:P(5,2)",64,0,281,24
+ 370               		.stabs	"len:P(5,2)",64,0,281,16
+ 371               		.stabs	"buf:P(0,48)",64,0,281,14
+ 372               	.global	nrf_regwr_long
+ 373               		.type	nrf_regwr_long, @function
+ 374               	nrf_regwr_long:
+ 375               		.stabd	46,0,0
+ 279:../../lib/nrf.c **** 
+ 280:../../lib/nrf.c **** 
+ 281:../../lib/nrf.c **** uint8_t nrf_regwr_long(uint8_t reg, uint8_t len, uint8_t *buf) {
+ 376               		.stabn	68,0,281,.LM31-.LFBB10
+ 377               	.LM31:
+ 378               	.LFBB10:
+ 379 0088 EF92      		push r14
+ 380 008a FF92      		push r15
+ 381 008c 0F93      		push r16
+ 382 008e 1F93      		push r17
+ 383 0090 CF93      		push r28
+ 384 0092 DF93      		push r29
+ 385 0094 1F92      		push __zero_reg__
+ 386 0096 CDB7      		in r28,__SP_L__
+ 387 0098 DEB7      		in r29,__SP_H__
+ 388               	/* prologue: function */
+ 389               	/* frame size = 1 */
+ 390               	/* stack size = 7 */
+ 391               	.L__stack_usage = 7
+ 392 009a 062F      		mov r16,r22
+ 393 009c 7A01      		movw r14,r20
+ 282:../../lib/nrf.c ****     uint8_t status;
+ 283:../../lib/nrf.c **** 
+ 284:../../lib/nrf.c ****     nrfspi_cs_en();
+ 394               		.stabn	68,0,284,.LM32-.LFBB10
+ 395               	.LM32:
+ 396 009e 8983      		std Y+1,r24
+ 397 00a0 0E94 0000 		call nrfspi_cs_en
+ 285:../../lib/nrf.c ****     status = nrfspi_txrx_byte(reg);
+ 398               		.stabn	68,0,285,.LM33-.LFBB10
+ 399               	.LM33:
+GAS LISTING /tmp/ccHcWfNP.s 			page 13
+
+
+ 400 00a4 8981      		ldd r24,Y+1
+ 401 00a6 0E94 0000 		call nrfspi_txrx_byte
+ 402 00aa 182F      		mov r17,r24
+ 286:../../lib/nrf.c ****     nrfspi_txrx(len, buf, 0);
+ 403               		.stabn	68,0,286,.LM34-.LFBB10
+ 404               	.LM34:
+ 405 00ac 40E0      		ldi r20,0
+ 406 00ae 50E0      		ldi r21,0
+ 407 00b0 B701      		movw r22,r14
+ 408 00b2 802F      		mov r24,r16
+ 409 00b4 0E94 0000 		call nrfspi_txrx
+ 287:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 410               		.stabn	68,0,287,.LM35-.LFBB10
+ 411               	.LM35:
+ 412 00b8 0E94 0000 		call nrfspi_cs_ds
+ 288:../../lib/nrf.c **** 
+ 289:../../lib/nrf.c ****     return status;
+ 290:../../lib/nrf.c **** }
+ 413               		.stabn	68,0,290,.LM36-.LFBB10
+ 414               	.LM36:
+ 415 00bc 812F      		mov r24,r17
+ 416               	/* epilogue start */
+ 417 00be 0F90      		pop __tmp_reg__
+ 418 00c0 DF91      		pop r29
+ 419 00c2 CF91      		pop r28
+ 420 00c4 1F91      		pop r17
+ 421 00c6 0F91      		pop r16
+ 422 00c8 FF90      		pop r15
+ 423 00ca EF90      		pop r14
+ 424 00cc 0895      		ret
+ 425               		.size	nrf_regwr_long, .-nrf_regwr_long
+ 426               		.stabs	"status:r(5,2)",64,0,282,17
+ 427               		.stabn	192,0,0,.LFBB10-.LFBB10
+ 428               		.stabn	224,0,0,.Lscope10-.LFBB10
+ 429               	.Lscope10:
+ 430               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 431               		.stabd	78,0,0
+ 432               		.stabs	"nrf_regrd_long:F(5,2)",36,0,293,nrf_regrd_long
+ 433               		.stabs	"reg:P(5,2)",64,0,293,24
+ 434               		.stabs	"len:P(5,2)",64,0,293,16
+ 435               		.stabs	"buf:P(0,48)",64,0,293,14
+ 436               	.global	nrf_regrd_long
+ 437               		.type	nrf_regrd_long, @function
+ 438               	nrf_regrd_long:
+ 439               		.stabd	46,0,0
+ 291:../../lib/nrf.c **** 
+ 292:../../lib/nrf.c **** 
+ 293:../../lib/nrf.c **** uint8_t nrf_regrd_long(uint8_t reg, uint8_t len, uint8_t *buf) {
+ 440               		.stabn	68,0,293,.LM37-.LFBB11
+ 441               	.LM37:
+ 442               	.LFBB11:
+ 443 00ce EF92      		push r14
+ 444 00d0 FF92      		push r15
+ 445 00d2 0F93      		push r16
+ 446 00d4 1F93      		push r17
+ 447 00d6 CF93      		push r28
+ 448 00d8 DF93      		push r29
+GAS LISTING /tmp/ccHcWfNP.s 			page 14
+
+
+ 449 00da 1F92      		push __zero_reg__
+ 450 00dc CDB7      		in r28,__SP_L__
+ 451 00de DEB7      		in r29,__SP_H__
+ 452               	/* prologue: function */
+ 453               	/* frame size = 1 */
+ 454               	/* stack size = 7 */
+ 455               	.L__stack_usage = 7
+ 456 00e0 062F      		mov r16,r22
+ 457 00e2 7A01      		movw r14,r20
+ 294:../../lib/nrf.c ****     uint8_t status;
+ 295:../../lib/nrf.c **** 
+ 296:../../lib/nrf.c ****     nrfspi_cs_en();
+ 458               		.stabn	68,0,296,.LM38-.LFBB11
+ 459               	.LM38:
+ 460 00e4 8983      		std Y+1,r24
+ 461 00e6 0E94 0000 		call nrfspi_cs_en
+ 297:../../lib/nrf.c ****     status = nrfspi_txrx_byte(reg);
+ 462               		.stabn	68,0,297,.LM39-.LFBB11
+ 463               	.LM39:
+ 464 00ea 8981      		ldd r24,Y+1
+ 465 00ec 0E94 0000 		call nrfspi_txrx_byte
+ 466 00f0 182F      		mov r17,r24
+ 298:../../lib/nrf.c ****     nrfspi_txrx(len, buf, buf);
+ 467               		.stabn	68,0,298,.LM40-.LFBB11
+ 468               	.LM40:
+ 469 00f2 A701      		movw r20,r14
+ 470 00f4 B701      		movw r22,r14
+ 471 00f6 802F      		mov r24,r16
+ 472 00f8 0E94 0000 		call nrfspi_txrx
+ 299:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 473               		.stabn	68,0,299,.LM41-.LFBB11
+ 474               	.LM41:
+ 475 00fc 0E94 0000 		call nrfspi_cs_ds
+ 300:../../lib/nrf.c **** 
+ 301:../../lib/nrf.c ****     return status;
+ 302:../../lib/nrf.c **** }
+ 476               		.stabn	68,0,302,.LM42-.LFBB11
+ 477               	.LM42:
+ 478 0100 812F      		mov r24,r17
+ 479               	/* epilogue start */
+ 480 0102 0F90      		pop __tmp_reg__
+ 481 0104 DF91      		pop r29
+ 482 0106 CF91      		pop r28
+ 483 0108 1F91      		pop r17
+ 484 010a 0F91      		pop r16
+ 485 010c FF90      		pop r15
+ 486 010e EF90      		pop r14
+ 487 0110 0895      		ret
+ 488               		.size	nrf_regrd_long, .-nrf_regrd_long
+ 489               		.stabs	"status:r(5,2)",64,0,294,17
+ 490               		.stabn	192,0,0,.LFBB11-.LFBB11
+ 491               		.stabn	224,0,0,.Lscope11-.LFBB11
+ 492               	.Lscope11:
+ 493               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 494               		.stabd	78,0,0
+ 495               		.stabs	"nrf_regwr:F(5,2)",36,0,305,nrf_regwr
+ 496               		.stabs	"reg:P(5,2)",64,0,305,24
+GAS LISTING /tmp/ccHcWfNP.s 			page 15
+
+
+ 497               		.stabs	"data:P(5,2)",64,0,305,22
+ 498               	.global	nrf_regwr
+ 499               		.type	nrf_regwr, @function
+ 500               	nrf_regwr:
+ 501               		.stabd	46,0,0
+ 303:../../lib/nrf.c **** 
+ 304:../../lib/nrf.c **** 
+ 305:../../lib/nrf.c **** uint8_t nrf_regwr(uint8_t reg, uint8_t data) {
+ 502               		.stabn	68,0,305,.LM43-.LFBB12
+ 503               	.LM43:
+ 504               	.LFBB12:
+ 505 0112 1F93      		push r17
+ 506 0114 CF93      		push r28
+ 507 0116 DF93      		push r29
+ 508 0118 00D0      		rcall .
+ 509 011a CDB7      		in r28,__SP_L__
+ 510 011c DEB7      		in r29,__SP_H__
+ 511               	/* prologue: function */
+ 512               	/* frame size = 2 */
+ 513               	/* stack size = 5 */
+ 514               	.L__stack_usage = 5
+ 306:../../lib/nrf.c ****     uint8_t status;
+ 307:../../lib/nrf.c ****     reg = NRF_CMD_REGWR | reg;
+ 308:../../lib/nrf.c **** 
+ 309:../../lib/nrf.c ****     nrfspi_cs_en();
+ 515               		.stabn	68,0,309,.LM44-.LFBB12
+ 516               	.LM44:
+ 517 011e 6A83      		std Y+2,r22
+ 518 0120 8983      		std Y+1,r24
+ 519 0122 0E94 0000 		call nrfspi_cs_en
+ 310:../../lib/nrf.c ****     status = nrfspi_txrx_byte(reg);
+ 520               		.stabn	68,0,310,.LM45-.LFBB12
+ 521               	.LM45:
+ 522 0126 8981      		ldd r24,Y+1
+ 523 0128 8062      		ori r24,lo8(32)
+ 524 012a 0E94 0000 		call nrfspi_txrx_byte
+ 525 012e 182F      		mov r17,r24
+ 311:../../lib/nrf.c ****     nrfspi_txrx_byte(data);
+ 526               		.stabn	68,0,311,.LM46-.LFBB12
+ 527               	.LM46:
+ 528 0130 6A81      		ldd r22,Y+2
+ 529 0132 862F      		mov r24,r22
+ 530 0134 0E94 0000 		call nrfspi_txrx_byte
+ 312:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 531               		.stabn	68,0,312,.LM47-.LFBB12
+ 532               	.LM47:
+ 533 0138 0E94 0000 		call nrfspi_cs_ds
+ 313:../../lib/nrf.c **** 
+ 314:../../lib/nrf.c ****     return status;
+ 315:../../lib/nrf.c **** }
+ 534               		.stabn	68,0,315,.LM48-.LFBB12
+ 535               	.LM48:
+ 536 013c 812F      		mov r24,r17
+ 537               	/* epilogue start */
+ 538 013e 0F90      		pop __tmp_reg__
+ 539 0140 0F90      		pop __tmp_reg__
+ 540 0142 DF91      		pop r29
+GAS LISTING /tmp/ccHcWfNP.s 			page 16
+
+
+ 541 0144 CF91      		pop r28
+ 542 0146 1F91      		pop r17
+ 543 0148 0895      		ret
+ 544               		.size	nrf_regwr, .-nrf_regwr
+ 545               		.stabs	"status:r(5,2)",64,0,306,17
+ 546               		.stabn	192,0,0,.LFBB12-.LFBB12
+ 547               		.stabn	224,0,0,.Lscope12-.LFBB12
+ 548               	.Lscope12:
+ 549               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 550               		.stabd	78,0,0
+ 551               		.stabs	"nrf_set_channel:F(0,47)",36,0,80,nrf_set_channel
+ 552               		.stabs	"channel:P(5,2)",64,0,80,24
+ 553               	.global	nrf_set_channel
+ 554               		.type	nrf_set_channel, @function
+ 555               	nrf_set_channel:
+ 556               		.stabd	46,0,0
+  80:../../lib/nrf.c **** void nrf_set_channel(uint8_t channel) {
+ 557               		.stabn	68,0,80,.LM49-.LFBB13
+ 558               	.LM49:
+ 559               	.LFBB13:
+ 560               	/* prologue: function */
+ 561               	/* frame size = 0 */
+ 562               	/* stack size = 0 */
+ 563               	.L__stack_usage = 0
+  81:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RF_CH, ( (channel & 0x7F) << NRF_BIT_RF_CH60 ) );
+ 564               		.stabn	68,0,81,.LM50-.LFBB13
+ 565               	.LM50:
+ 566 014a 682F      		mov r22,r24
+ 567 014c 6F77      		andi r22,lo8(127)
+ 568 014e 85E0      		ldi r24,lo8(5)
+ 569 0150 0C94 0000 		jmp nrf_regwr
+ 570               		.size	nrf_set_channel, .-nrf_set_channel
+ 571               	.Lscope13:
+ 572               		.stabs	"",36,0,0,.Lscope13-.LFBB13
+ 573               		.stabd	78,0,0
+ 574               		.stabs	"__vector_1:F(0,47)",36,0,193,__vector_1
+ 575               	.global	__vector_1
+ 576               		.type	__vector_1, @function
+ 577               	__vector_1:
+ 578               		.stabd	46,0,0
+ 193:../../lib/nrf.c **** ISR(INT0_vect) {
+ 579               		.stabn	68,0,193,.LM51-.LFBB14
+ 580               	.LM51:
+ 581               	.LFBB14:
+ 582 0154 1F92      		push r1
+ 583 0156 0F92      		push r0
+ 584 0158 0FB6      		in r0,__SREG__
+ 585 015a 0F92      		push r0
+ 586 015c 1124      		clr __zero_reg__
+ 587 015e 2F93      		push r18
+ 588 0160 3F93      		push r19
+ 589 0162 4F93      		push r20
+ 590 0164 5F93      		push r21
+ 591 0166 6F93      		push r22
+ 592 0168 7F93      		push r23
+ 593 016a 8F93      		push r24
+ 594 016c 9F93      		push r25
+GAS LISTING /tmp/ccHcWfNP.s 			page 17
+
+
+ 595 016e AF93      		push r26
+ 596 0170 BF93      		push r27
+ 597 0172 CF93      		push r28
+ 598 0174 EF93      		push r30
+ 599 0176 FF93      		push r31
+ 600               	/* prologue: Signal */
+ 601               	/* frame size = 0 */
+ 602               	/* stack size = 16 */
+ 603               	.L__stack_usage = 16
+ 200:../../lib/nrf.c ****     nrf_ce_off();
+ 604               		.stabn	68,0,200,.LM52-.LFBB14
+ 605               	.LM52:
+ 606 0178 0E94 0000 		call nrf_ce_off
+ 203:../../lib/nrf.c ****     nrf_disable_irq();
+ 607               		.stabn	68,0,203,.LM53-.LFBB14
+ 608               	.LM53:
+ 609 017c 0E94 0000 		call nrf_disable_irq
+ 206:../../lib/nrf.c ****     status = nrf_rxpayload(rx_packet_buffer);
+ 610               		.stabn	68,0,206,.LM54-.LFBB14
+ 611               	.LM54:
+ 612 0180 8091 0000 		lds r24,rx_packet_buffer
+ 613 0184 9091 0000 		lds r25,rx_packet_buffer+1
+ 614 0188 0E94 0000 		call nrf_rxpayload
+ 615 018c C82F      		mov r28,r24
+ 207:../../lib/nrf.c ****     dbg_set(status & 0xF);
+ 616               		.stabn	68,0,207,.LM55-.LFBB14
+ 617               	.LM55:
+ 618 018e 8F70      		andi r24,lo8(15)
+ 619 0190 90E0      		ldi r25,0
+ 620 0192 0E94 0000 		call dbg_set
+ 210:../../lib/nrf.c ****     nrf_regwr(NRF_REG_STATUS, status | _BV(NRF_BIT_RX_DR));
+ 621               		.stabn	68,0,210,.LM56-.LFBB14
+ 622               	.LM56:
+ 623 0196 6C2F      		mov r22,r28
+ 624 0198 6064      		ori r22,lo8(64)
+ 625 019a 87E0      		ldi r24,lo8(7)
+ 626 019c 0E94 0000 		call nrf_regwr
+ 213:../../lib/nrf.c ****     packet_ready = 1;
+ 627               		.stabn	68,0,213,.LM57-.LFBB14
+ 628               	.LM57:
+ 629 01a0 81E0      		ldi r24,lo8(1)
+ 630 01a2 8093 0000 		sts packet_ready,r24
+ 216:../../lib/nrf.c ****     nrf_ce_on();
+ 631               		.stabn	68,0,216,.LM58-.LFBB14
+ 632               	.LM58:
+ 633 01a6 0E94 0000 		call nrf_ce_on
+ 634               	/* epilogue start */
+ 217:../../lib/nrf.c **** }
+ 635               		.stabn	68,0,217,.LM59-.LFBB14
+ 636               	.LM59:
+ 637 01aa FF91      		pop r31
+ 638 01ac EF91      		pop r30
+ 639 01ae CF91      		pop r28
+ 640 01b0 BF91      		pop r27
+ 641 01b2 AF91      		pop r26
+ 642 01b4 9F91      		pop r25
+ 643 01b6 8F91      		pop r24
+GAS LISTING /tmp/ccHcWfNP.s 			page 18
+
+
+ 644 01b8 7F91      		pop r23
+ 645 01ba 6F91      		pop r22
+ 646 01bc 5F91      		pop r21
+ 647 01be 4F91      		pop r20
+ 648 01c0 3F91      		pop r19
+ 649 01c2 2F91      		pop r18
+ 650 01c4 0F90      		pop r0
+ 651 01c6 0FBE      		out __SREG__,r0
+ 652 01c8 0F90      		pop r0
+ 653 01ca 1F90      		pop r1
+ 654 01cc 1895      		reti
+ 655               		.size	__vector_1, .-__vector_1
+ 656               		.stabs	"status:r(5,2)",64,0,194,28
+ 657               		.stabn	192,0,0,.LFBB14-.LFBB14
+ 658               		.stabn	224,0,0,.Lscope14-.LFBB14
+ 659               	.Lscope14:
+ 660               		.stabs	"",36,0,0,.Lscope14-.LFBB14
+ 661               		.stabd	78,0,0
+ 662               		.stabs	"nrf_regrd:F(5,2)",36,0,318,nrf_regrd
+ 663               		.stabs	"reg:P(5,2)",64,0,318,24
+ 664               	.global	nrf_regrd
+ 665               		.type	nrf_regrd, @function
+ 666               	nrf_regrd:
+ 667               		.stabd	46,0,0
+ 316:../../lib/nrf.c **** 
+ 317:../../lib/nrf.c **** 
+ 318:../../lib/nrf.c **** uint8_t nrf_regrd(uint8_t reg) {
+ 668               		.stabn	68,0,318,.LM60-.LFBB15
+ 669               	.LM60:
+ 670               	.LFBB15:
+ 671 01ce CF93      		push r28
+ 672 01d0 DF93      		push r29
+ 673 01d2 1F92      		push __zero_reg__
+ 674 01d4 CDB7      		in r28,__SP_L__
+ 675 01d6 DEB7      		in r29,__SP_H__
+ 676               	/* prologue: function */
+ 677               	/* frame size = 1 */
+ 678               	/* stack size = 3 */
+ 679               	.L__stack_usage = 3
+ 319:../../lib/nrf.c ****     uint8_t data;
+ 320:../../lib/nrf.c ****     reg = NRF_CMD_REGRD | reg;
+ 321:../../lib/nrf.c **** 
+ 322:../../lib/nrf.c ****     nrfspi_cs_en();
+ 680               		.stabn	68,0,322,.LM61-.LFBB15
+ 681               	.LM61:
+ 682 01d8 8983      		std Y+1,r24
+ 683 01da 0E94 0000 		call nrfspi_cs_en
+ 323:../../lib/nrf.c ****     nrfspi_txrx_byte(reg);
+ 684               		.stabn	68,0,323,.LM62-.LFBB15
+ 685               	.LM62:
+ 686 01de 8981      		ldd r24,Y+1
+ 687 01e0 0E94 0000 		call nrfspi_txrx_byte
+ 324:../../lib/nrf.c ****     data = nrfspi_txrx_byte(0);
+ 688               		.stabn	68,0,324,.LM63-.LFBB15
+ 689               	.LM63:
+ 690 01e4 80E0      		ldi r24,0
+ 691 01e6 0E94 0000 		call nrfspi_txrx_byte
+GAS LISTING /tmp/ccHcWfNP.s 			page 19
+
+
+ 325:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 692               		.stabn	68,0,325,.LM64-.LFBB15
+ 693               	.LM64:
+ 694 01ea 8983      		std Y+1,r24
+ 695 01ec 0E94 0000 		call nrfspi_cs_ds
+ 326:../../lib/nrf.c **** 
+ 327:../../lib/nrf.c ****     return data;
+ 328:../../lib/nrf.c **** }
+ 696               		.stabn	68,0,328,.LM65-.LFBB15
+ 697               	.LM65:
+ 698 01f0 8981      		ldd r24,Y+1
+ 699               	/* epilogue start */
+ 700 01f2 0F90      		pop __tmp_reg__
+ 701 01f4 DF91      		pop r29
+ 702 01f6 CF91      		pop r28
+ 703 01f8 0895      		ret
+ 704               		.size	nrf_regrd, .-nrf_regrd
+ 705               		.stabs	"data:r(5,2)",64,0,319,24
+ 706               		.stabn	192,0,0,.LFBB15-.LFBB15
+ 707               		.stabn	224,0,0,.Lscope15-.LFBB15
+ 708               	.Lscope15:
+ 709               		.stabs	"",36,0,0,.Lscope15-.LFBB15
+ 710               		.stabd	78,0,0
+ 711               		.stabs	"nrf_init:F(0,47)",36,0,15,nrf_init
+ 712               		.stabs	"rxpbuf:P(0,48)",64,0,15,28
+ 713               	.global	nrf_init
+ 714               		.type	nrf_init, @function
+ 715               	nrf_init:
+ 716               		.stabd	46,0,0
+  15:../../lib/nrf.c **** void nrf_init(uint8_t *rxpbuf) {
+ 717               		.stabn	68,0,15,.LM66-.LFBB16
+ 718               	.LM66:
+ 719               	.LFBB16:
+ 720 01fa CF93      		push r28
+ 721 01fc DF93      		push r29
+ 722               	/* prologue: function */
+ 723               	/* frame size = 0 */
+ 724               	/* stack size = 2 */
+ 725               	.L__stack_usage = 2
+ 726 01fe EC01      		movw r28,r24
+  17:../../lib/nrf.c ****     nrf_ce_off();
+ 727               		.stabn	68,0,17,.LM67-.LFBB16
+ 728               	.LM67:
+ 729 0200 0E94 0000 		call nrf_ce_off
+  19:../../lib/nrf.c ****     _ON(NRF_CE_DDR, NRF_CE_PIN);
+ 730               		.stabn	68,0,19,.LM68-.LFBB16
+ 731               	.LM68:
+ 732 0204 209A      		sbi 0x4,0
+  22:../../lib/nrf.c ****     nrfspi_init();
+ 733               		.stabn	68,0,22,.LM69-.LFBB16
+ 734               	.LM69:
+ 735 0206 0E94 0000 		call nrfspi_init
+  23:../../lib/nrf.c ****     nrfspi_enable();
+ 736               		.stabn	68,0,23,.LM70-.LFBB16
+ 737               	.LM70:
+ 738 020a 0E94 0000 		call nrfspi_enable
+  26:../../lib/nrf.c ****     rx_packet_buffer = rxpbuf;
+GAS LISTING /tmp/ccHcWfNP.s 			page 20
+
+
+ 739               		.stabn	68,0,26,.LM71-.LFBB16
+ 740               	.LM71:
+ 741 020e D093 0000 		sts rx_packet_buffer+1,r29
+ 742 0212 C093 0000 		sts rx_packet_buffer,r28
+  29:../../lib/nrf.c ****     _OFF(NRF_IRQ_DDR, NRF_IRQ_PIN);
+ 743               		.stabn	68,0,29,.LM72-.LFBB16
+ 744               	.LM72:
+ 745 0216 5298      		cbi 0xa,2
+  30:../../lib/nrf.c ****     _ON(NRF_IRQ_PRT, NRF_IRQ_PIN);
+ 746               		.stabn	68,0,30,.LM73-.LFBB16
+ 747               	.LM73:
+ 748 0218 5A9A      		sbi 0xb,2
+  31:../../lib/nrf.c ****     EICRA = _BV(ISC01);
+ 749               		.stabn	68,0,31,.LM74-.LFBB16
+ 750               	.LM74:
+ 751 021a 82E0      		ldi r24,lo8(2)
+ 752 021c 8093 6900 		sts 105,r24
+ 753               	.L21:
+  48:../../lib/nrf.c ****     while ( !(nrf_regrd(NRF_REG_CONFIG) & _BV(NRF_BIT_EN_CRC)) );
+ 754               		.stabn	68,0,48,.LM75-.LFBB16
+ 755               	.LM75:
+ 756 0220 80E0      		ldi r24,0
+ 757 0222 0E94 0000 		call nrf_regrd
+ 758 0226 83FF      		sbrs r24,3
+ 759 0228 00C0      		rjmp .L21
+  51:../../lib/nrf.c ****     nrf_regwr(NRF_REG_CONFIG, NRF_INI_CONFIG);
+ 760               		.stabn	68,0,51,.LM76-.LFBB16
+ 761               	.LM76:
+ 762 022a 6AE3      		ldi r22,lo8(58)
+ 763 022c 80E0      		ldi r24,0
+ 764 022e 0E94 0000 		call nrf_regwr
+  52:../../lib/nrf.c ****     nrf_regwr(NRF_REG_SETUP_AW, NRF_INI_SETUP_AW);
+ 765               		.stabn	68,0,52,.LM77-.LFBB16
+ 766               	.LM77:
+ 767 0232 63E0      		ldi r22,lo8(3)
+ 768 0234 83E0      		ldi r24,lo8(3)
+ 769 0236 0E94 0000 		call nrf_regwr
+  53:../../lib/nrf.c ****     nrf_regwr(NRF_REG_SETUP_RETR, NRF_INI_SETUP_RETR);
+ 770               		.stabn	68,0,53,.LM78-.LFBB16
+ 771               	.LM78:
+ 772 023a 61E2      		ldi r22,lo8(33)
+ 773 023c 84E0      		ldi r24,lo8(4)
+ 774 023e 0E94 0000 		call nrf_regwr
+  54:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RF_SETUP, NRF_INI_RF_SETUP);
+ 775               		.stabn	68,0,54,.LM79-.LFBB16
+ 776               	.LM79:
+ 777 0242 62E0      		ldi r22,lo8(2)
+ 778 0244 86E0      		ldi r24,lo8(6)
+ 779 0246 0E94 0000 		call nrf_regwr
+  56:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_AA, NRF_INI_EN_AA);
+ 780               		.stabn	68,0,56,.LM80-.LFBB16
+ 781               	.LM80:
+ 782 024a 60E0      		ldi r22,0
+ 783 024c 81E0      		ldi r24,lo8(1)
+ 784 024e 0E94 0000 		call nrf_regwr
+  57:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_RXADDR, NRF_INI_EN_RXADDR);
+ 785               		.stabn	68,0,57,.LM81-.LFBB16
+GAS LISTING /tmp/ccHcWfNP.s 			page 21
+
+
+ 786               	.LM81:
+ 787 0252 60E0      		ldi r22,0
+ 788 0254 82E0      		ldi r24,lo8(2)
+ 789 0256 0E94 0000 		call nrf_regwr
+  59:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P0, NRF_INI_RX_PW_Px);
+ 790               		.stabn	68,0,59,.LM82-.LFBB16
+ 791               	.LM82:
+ 792 025a 60E0      		ldi r22,0
+ 793 025c 81E1      		ldi r24,lo8(17)
+ 794 025e 0E94 0000 		call nrf_regwr
+  60:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P1, NRF_INI_RX_PW_Px);
+ 795               		.stabn	68,0,60,.LM83-.LFBB16
+ 796               	.LM83:
+ 797 0262 60E0      		ldi r22,0
+ 798 0264 82E1      		ldi r24,lo8(18)
+ 799 0266 0E94 0000 		call nrf_regwr
+  61:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P2, NRF_INI_RX_PW_Px);
+ 800               		.stabn	68,0,61,.LM84-.LFBB16
+ 801               	.LM84:
+ 802 026a 60E0      		ldi r22,0
+ 803 026c 83E1      		ldi r24,lo8(19)
+ 804 026e 0E94 0000 		call nrf_regwr
+  62:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P3, NRF_INI_RX_PW_Px);
+ 805               		.stabn	68,0,62,.LM85-.LFBB16
+ 806               	.LM85:
+ 807 0272 60E0      		ldi r22,0
+ 808 0274 84E1      		ldi r24,lo8(20)
+ 809 0276 0E94 0000 		call nrf_regwr
+  63:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P4, NRF_INI_RX_PW_Px);
+ 810               		.stabn	68,0,63,.LM86-.LFBB16
+ 811               	.LM86:
+ 812 027a 60E0      		ldi r22,0
+ 813 027c 85E1      		ldi r24,lo8(21)
+ 814 027e 0E94 0000 		call nrf_regwr
+  64:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P5, NRF_INI_RX_PW_Px);
+ 815               		.stabn	68,0,64,.LM87-.LFBB16
+ 816               	.LM87:
+ 817 0282 60E0      		ldi r22,0
+ 818 0284 86E1      		ldi r24,lo8(22)
+ 819               	/* epilogue start */
+  65:../../lib/nrf.c **** }
+ 820               		.stabn	68,0,65,.LM88-.LFBB16
+ 821               	.LM88:
+ 822 0286 DF91      		pop r29
+ 823 0288 CF91      		pop r28
+  64:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P5, NRF_INI_RX_PW_Px);
+ 824               		.stabn	68,0,64,.LM89-.LFBB16
+ 825               	.LM89:
+ 826 028a 0C94 0000 		jmp nrf_regwr
+ 827               		.size	nrf_init, .-nrf_init
+ 828               	.Lscope16:
+ 829               		.stabs	"",36,0,0,.Lscope16-.LFBB16
+ 830               		.stabd	78,0,0
+ 831               		.stabs	"nrf_set_power:F(0,47)",36,0,84,nrf_set_power
+ 832               		.stabs	"pwr:P(5,2)",64,0,84,28
+ 833               	.global	nrf_set_power
+ 834               		.type	nrf_set_power, @function
+GAS LISTING /tmp/ccHcWfNP.s 			page 22
+
+
+ 835               	nrf_set_power:
+ 836               		.stabd	46,0,0
+  84:../../lib/nrf.c **** void nrf_set_power(uint8_t pwr) {
+ 837               		.stabn	68,0,84,.LM90-.LFBB17
+ 838               	.LM90:
+ 839               	.LFBB17:
+ 840 028e CF93      		push r28
+ 841               	/* prologue: function */
+ 842               	/* frame size = 0 */
+ 843               	/* stack size = 1 */
+ 844               	.L__stack_usage = 1
+ 845 0290 C82F      		mov r28,r24
+  85:../../lib/nrf.c ****     uint8_t v = nrf_regrd(NRF_REG_RF_SETUP);
+ 846               		.stabn	68,0,85,.LM91-.LFBB17
+ 847               	.LM91:
+ 848 0292 86E0      		ldi r24,lo8(6)
+ 849 0294 0E94 0000 		call nrf_regrd
+  86:../../lib/nrf.c ****     v &= ~(0x3 << NRF_BIT_RF_PWR21);
+ 850               		.stabn	68,0,86,.LM92-.LFBB17
+ 851               	.LM92:
+ 852 0298 682F      		mov r22,r24
+ 853 029a 697F      		andi r22,lo8(-7)
+  87:../../lib/nrf.c ****     v |= pwr & (0x3 << NRF_BIT_RF_PWR21);
+ 854               		.stabn	68,0,87,.LM93-.LFBB17
+ 855               	.LM93:
+ 856 029c C670      		andi r28,lo8(6)
+ 857 029e 6C2B      		or r22,r28
+  88:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RF_SETUP, v);
+ 858               		.stabn	68,0,88,.LM94-.LFBB17
+ 859               	.LM94:
+ 860 02a0 86E0      		ldi r24,lo8(6)
+ 861               	/* epilogue start */
+  89:../../lib/nrf.c **** }
+ 862               		.stabn	68,0,89,.LM95-.LFBB17
+ 863               	.LM95:
+ 864 02a2 CF91      		pop r28
+  88:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RF_SETUP, v);
+ 865               		.stabn	68,0,88,.LM96-.LFBB17
+ 866               	.LM96:
+ 867 02a4 0C94 0000 		jmp nrf_regwr
+ 868               		.size	nrf_set_power, .-nrf_set_power
+ 869               	.Lscope17:
+ 870               		.stabs	"",36,0,0,.Lscope17-.LFBB17
+ 871               		.stabd	78,0,0
+ 872               		.stabs	"nrf_enable_pipe:F(0,47)",36,0,91,nrf_enable_pipe
+ 873               		.stabs	"pipe:P(5,2)",64,0,91,15
+ 874               		.stabs	"addr:P(0,48)",64,0,91,16
+ 875               	.global	nrf_enable_pipe
+ 876               		.type	nrf_enable_pipe, @function
+ 877               	nrf_enable_pipe:
+ 878               		.stabd	46,0,0
+  91:../../lib/nrf.c **** void nrf_enable_pipe(uint8_t pipe, uint8_t *addr) {
+ 879               		.stabn	68,0,91,.LM97-.LFBB18
+ 880               	.LM97:
+ 881               	.LFBB18:
+ 882 02a8 FF92      		push r15
+ 883 02aa 0F93      		push r16
+GAS LISTING /tmp/ccHcWfNP.s 			page 23
+
+
+ 884 02ac 1F93      		push r17
+ 885 02ae CF93      		push r28
+ 886 02b0 DF93      		push r29
+ 887               	/* prologue: function */
+ 888               	/* frame size = 0 */
+ 889               	/* stack size = 5 */
+ 890               	.L__stack_usage = 5
+ 891 02b2 F82E      		mov r15,r24
+ 892 02b4 8B01      		movw r16,r22
+  95:../../lib/nrf.c ****     nrf_regwr(NRF_REG_RX_PW_P0 + pipe, COM_PL_SIZE);
+ 893               		.stabn	68,0,95,.LM98-.LFBB18
+ 894               	.LM98:
+ 895 02b6 69E1      		ldi r22,lo8(25)
+ 896 02b8 81E1      		ldi r24,lo8(17)
+ 897 02ba 8F0D      		add r24,r15
+ 898 02bc 0E94 0000 		call nrf_regwr
+  98:../../lib/nrf.c ****     v = nrf_regrd(NRF_REG_EN_AA);
+ 899               		.stabn	68,0,98,.LM99-.LFBB18
+ 900               	.LM99:
+ 901 02c0 81E0      		ldi r24,lo8(1)
+ 902 02c2 0E94 0000 		call nrf_regrd
+  99:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_AA, v | _BV(pipe));
+ 903               		.stabn	68,0,99,.LM100-.LFBB18
+ 904               	.LM100:
+ 905 02c6 C1E0      		ldi r28,lo8(1)
+ 906 02c8 D0E0      		ldi r29,0
+ 907 02ca 0F2C      		mov r0,r15
+ 908 02cc 00C0      		rjmp 2f
+ 909               		1:
+ 910 02ce CC0F      		lsl r28
+ 911               		2:
+ 912 02d0 0A94      		dec r0
+ 913 02d2 02F4      		brpl 1b
+ 914 02d4 6C2F      		mov r22,r28
+ 915 02d6 682B      		or r22,r24
+ 916 02d8 81E0      		ldi r24,lo8(1)
+ 917 02da 0E94 0000 		call nrf_regwr
+ 102:../../lib/nrf.c ****     v = nrf_regrd(NRF_REG_EN_RXADDR);
+ 918               		.stabn	68,0,102,.LM101-.LFBB18
+ 919               	.LM101:
+ 920 02de 82E0      		ldi r24,lo8(2)
+ 921 02e0 0E94 0000 		call nrf_regrd
+ 103:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_RXADDR, v | _BV(pipe));
+ 922               		.stabn	68,0,103,.LM102-.LFBB18
+ 923               	.LM102:
+ 924 02e4 6C2F      		mov r22,r28
+ 925 02e6 682B      		or r22,r24
+ 926 02e8 82E0      		ldi r24,lo8(2)
+ 927 02ea 0E94 0000 		call nrf_regwr
+ 928 02ee 8AE0      		ldi r24,lo8(10)
+ 929 02f0 8F0D      		add r24,r15
+ 106:../../lib/nrf.c ****     if (pipe <= 1) {
+ 930               		.stabn	68,0,106,.LM103-.LFBB18
+ 931               	.LM103:
+ 932 02f2 91E0      		ldi r25,lo8(1)
+ 933 02f4 9F15      		cp r25,r15
+ 934 02f6 00F0      		brlo .L24
+GAS LISTING /tmp/ccHcWfNP.s 			page 24
+
+
+ 108:../../lib/nrf.c ****         nrf_regwr_long(NRF_REG_RX_ADDR_P0 + pipe, COM_AD_SIZE, addr);
+ 935               		.stabn	68,0,108,.LM104-.LFBB18
+ 936               	.LM104:
+ 937 02f8 A801      		movw r20,r16
+ 938 02fa 65E0      		ldi r22,lo8(5)
+ 939               	/* epilogue start */
+ 113:../../lib/nrf.c **** }
+ 940               		.stabn	68,0,113,.LM105-.LFBB18
+ 941               	.LM105:
+ 942 02fc DF91      		pop r29
+ 943 02fe CF91      		pop r28
+ 944 0300 1F91      		pop r17
+ 945 0302 0F91      		pop r16
+ 946 0304 FF90      		pop r15
+ 108:../../lib/nrf.c ****         nrf_regwr_long(NRF_REG_RX_ADDR_P0 + pipe, COM_AD_SIZE, addr);
+ 947               		.stabn	68,0,108,.LM106-.LFBB18
+ 948               	.LM106:
+ 949 0306 0C94 0000 		jmp nrf_regwr_long
+ 950               	.L24:
+ 111:../../lib/nrf.c ****         nrf_regwr(NRF_REG_RX_ADDR_P0 + pipe, addr[0]);
+ 951               		.stabn	68,0,111,.LM107-.LFBB18
+ 952               	.LM107:
+ 953 030a F801      		movw r30,r16
+ 954 030c 6081      		ld r22,Z
+ 955               	/* epilogue start */
+ 113:../../lib/nrf.c **** }
+ 956               		.stabn	68,0,113,.LM108-.LFBB18
+ 957               	.LM108:
+ 958 030e DF91      		pop r29
+ 959 0310 CF91      		pop r28
+ 960 0312 1F91      		pop r17
+ 961 0314 0F91      		pop r16
+ 962 0316 FF90      		pop r15
+ 111:../../lib/nrf.c ****         nrf_regwr(NRF_REG_RX_ADDR_P0 + pipe, addr[0]);
+ 963               		.stabn	68,0,111,.LM109-.LFBB18
+ 964               	.LM109:
+ 965 0318 0C94 0000 		jmp nrf_regwr
+ 966               		.size	nrf_enable_pipe, .-nrf_enable_pipe
+ 967               	.Lscope18:
+ 968               		.stabs	"",36,0,0,.Lscope18-.LFBB18
+ 969               		.stabd	78,0,0
+ 970               		.stabs	"nrf_disable_pipe:F(0,47)",36,0,115,nrf_disable_pipe
+ 971               		.stabs	"pipe:P(5,2)",64,0,115,28
+ 972               	.global	nrf_disable_pipe
+ 973               		.type	nrf_disable_pipe, @function
+ 974               	nrf_disable_pipe:
+ 975               		.stabd	46,0,0
+ 115:../../lib/nrf.c **** void nrf_disable_pipe(uint8_t pipe) {
+ 976               		.stabn	68,0,115,.LM110-.LFBB19
+ 977               	.LM110:
+ 978               	.LFBB19:
+ 979 031c CF93      		push r28
+ 980               	/* prologue: function */
+ 981               	/* frame size = 0 */
+ 982               	/* stack size = 1 */
+ 983               	.L__stack_usage = 1
+ 984 031e C82F      		mov r28,r24
+GAS LISTING /tmp/ccHcWfNP.s 			page 25
+
+
+ 116:../../lib/nrf.c ****     uint8_t v = nrf_regrd(NRF_REG_EN_RXADDR);
+ 985               		.stabn	68,0,116,.LM111-.LFBB19
+ 986               	.LM111:
+ 987 0320 82E0      		ldi r24,lo8(2)
+ 988 0322 0E94 0000 		call nrf_regrd
+ 117:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_RXADDR, v & ~_BV(pipe));
+ 989               		.stabn	68,0,117,.LM112-.LFBB19
+ 990               	.LM112:
+ 991 0326 61E0      		ldi r22,lo8(1)
+ 992 0328 70E0      		ldi r23,0
+ 993 032a 00C0      		rjmp 2f
+ 994               		1:
+ 995 032c 660F      		lsl r22
+ 996               		2:
+ 997 032e CA95      		dec r28
+ 998 0330 02F4      		brpl 1b
+ 999 0332 6095      		com r22
+ 1000 0334 6823      		and r22,r24
+ 1001 0336 82E0      		ldi r24,lo8(2)
+ 1002               	/* epilogue start */
+ 118:../../lib/nrf.c **** }
+ 1003               		.stabn	68,0,118,.LM113-.LFBB19
+ 1004               	.LM113:
+ 1005 0338 CF91      		pop r28
+ 117:../../lib/nrf.c ****     nrf_regwr(NRF_REG_EN_RXADDR, v & ~_BV(pipe));
+ 1006               		.stabn	68,0,117,.LM114-.LFBB19
+ 1007               	.LM114:
+ 1008 033a 0C94 0000 		jmp nrf_regwr
+ 1009               		.size	nrf_disable_pipe, .-nrf_disable_pipe
+ 1010               	.Lscope19:
+ 1011               		.stabs	"",36,0,0,.Lscope19-.LFBB19
+ 1012               		.stabd	78,0,0
+ 1013               		.stabs	"nrf_flushtx:F(5,2)",36,0,331,nrf_flushtx
+ 1014               	.global	nrf_flushtx
+ 1015               		.type	nrf_flushtx, @function
+ 1016               	nrf_flushtx:
+ 1017               		.stabd	46,0,0
+ 329:../../lib/nrf.c **** 
+ 330:../../lib/nrf.c **** 
+ 331:../../lib/nrf.c **** uint8_t nrf_flushtx(void) {
+ 1018               		.stabn	68,0,331,.LM115-.LFBB20
+ 1019               	.LM115:
+ 1020               	.LFBB20:
+ 1021 033e CF93      		push r28
+ 1022 0340 DF93      		push r29
+ 1023 0342 1F92      		push __zero_reg__
+ 1024 0344 CDB7      		in r28,__SP_L__
+ 1025 0346 DEB7      		in r29,__SP_H__
+ 1026               	/* prologue: function */
+ 1027               	/* frame size = 1 */
+ 1028               	/* stack size = 3 */
+ 1029               	.L__stack_usage = 3
+ 332:../../lib/nrf.c ****     uint8_t status;
+ 333:../../lib/nrf.c **** 
+ 334:../../lib/nrf.c ****     nrfspi_cs_en();
+ 1030               		.stabn	68,0,334,.LM116-.LFBB20
+ 1031               	.LM116:
+GAS LISTING /tmp/ccHcWfNP.s 			page 26
+
+
+ 1032 0348 0E94 0000 		call nrfspi_cs_en
+ 335:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_FLSHT);
+ 1033               		.stabn	68,0,335,.LM117-.LFBB20
+ 1034               	.LM117:
+ 1035 034c 81EE      		ldi r24,lo8(-31)
+ 1036 034e 0E94 0000 		call nrfspi_txrx_byte
+ 336:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 1037               		.stabn	68,0,336,.LM118-.LFBB20
+ 1038               	.LM118:
+ 1039 0352 8983      		std Y+1,r24
+ 1040 0354 0E94 0000 		call nrfspi_cs_ds
+ 337:../../lib/nrf.c **** 
+ 338:../../lib/nrf.c ****     return status;
+ 339:../../lib/nrf.c **** }
+ 1041               		.stabn	68,0,339,.LM119-.LFBB20
+ 1042               	.LM119:
+ 1043 0358 8981      		ldd r24,Y+1
+ 1044               	/* epilogue start */
+ 1045 035a 0F90      		pop __tmp_reg__
+ 1046 035c DF91      		pop r29
+ 1047 035e CF91      		pop r28
+ 1048 0360 0895      		ret
+ 1049               		.size	nrf_flushtx, .-nrf_flushtx
+ 1050               		.stabs	"status:r(5,2)",64,0,332,24
+ 1051               		.stabn	192,0,0,.LFBB20-.LFBB20
+ 1052               		.stabn	224,0,0,.Lscope20-.LFBB20
+ 1053               	.Lscope20:
+ 1054               		.stabs	"",36,0,0,.Lscope20-.LFBB20
+ 1055               		.stabd	78,0,0
+ 1056               		.stabs	"nrf_setmode.part.0:f(0,47)",36,0,231,nrf_setmode.part.0
+ 1057               		.type	nrf_setmode.part.0, @function
+ 1058               	nrf_setmode.part.0:
+ 1059               		.stabd	46,0,0
+ 231:../../lib/nrf.c **** void nrf_setmode(nrf_mode_t mode) {
+ 1060               		.stabn	68,0,231,.LM120-.LFBB21
+ 1061               	.LM120:
+ 1062               	.LFBB21:
+ 1063               	/* prologue: function */
+ 1064               	/* frame size = 0 */
+ 1065               	/* stack size = 0 */
+ 1066               	.L__stack_usage = 0
+ 233:../../lib/nrf.c ****         nrf_flushtx();
+ 1067               		.stabn	68,0,233,.LM121-.LFBB21
+ 1068               	.LM121:
+ 1069 0362 0E94 0000 		call nrf_flushtx
+ 235:../../lib/nrf.c ****         nrf_regwr(NRF_REG_STATUS, _BV(NRF_BIT_RX_DR) | _BV(NRF_BIT_TX_DS) |
+ 1070               		.stabn	68,0,235,.LM122-.LFBB21
+ 1071               	.LM122:
+ 1072 0366 60E7      		ldi r22,lo8(112)
+ 1073 0368 87E0      		ldi r24,lo8(7)
+ 1074 036a 0E94 0000 		call nrf_regwr
+ 238:../../lib/nrf.c ****         nrf_regwr(NRF_REG_CONFIG, (NRF_INI_CONFIG & ~(_BV(NRF_BIT_PRIM_RX))) |
+ 1075               		.stabn	68,0,238,.LM123-.LFBB21
+ 1076               	.LM123:
+ 1077 036e 6AE3      		ldi r22,lo8(58)
+ 1078 0370 80E0      		ldi r24,0
+ 1079 0372 0E94 0000 		call nrf_regwr
+GAS LISTING /tmp/ccHcWfNP.s 			page 27
+
+
+ 1080               	.LBB12:
+ 1081               	.LBB13:
+ 1082               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext1
+ 1083               	.Ltext1:
+   1:/usr/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/avr/include/util/delay.h **** 
+   6:/usr/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/avr/include/util/delay.h **** 
+   9:/usr/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/avr/include/util/delay.h **** 
+  12:/usr/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/avr/include/util/delay.h ****      distribution.
+  16:/usr/avr/include/util/delay.h **** 
+  17:/usr/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/avr/include/util/delay.h **** 
+  21:/usr/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/avr/include/util/delay.h **** 
+  33:/usr/avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/avr/include/util/delay.h **** 
+  35:/usr/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/avr/include/util/delay.h **** 
+  38:/usr/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/avr/include/util/delay.h **** #endif
+  41:/usr/avr/include/util/delay.h **** 
+  42:/usr/avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/avr/include/util/delay.h **** #include <math.h>
+  45:/usr/avr/include/util/delay.h **** 
+  46:/usr/avr/include/util/delay.h **** /** \file */
+  47:/usr/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/avr/include/util/delay.h ****     \code
+  49:/usr/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/avr/include/util/delay.h ****     \endcode
+  53:/usr/avr/include/util/delay.h **** 
+GAS LISTING /tmp/ccHcWfNP.s 			page 28
+
+
+  54:/usr/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/avr/include/util/delay.h ****     used.
+  58:/usr/avr/include/util/delay.h **** 
+  59:/usr/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/avr/include/util/delay.h **** 
+  68:/usr/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/avr/include/util/delay.h **** 
+  77:/usr/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/avr/include/util/delay.h **** 
+  81:/usr/avr/include/util/delay.h **** */
+  82:/usr/avr/include/util/delay.h **** 
+  83:/usr/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/avr/include/util/delay.h **** #endif
+  87:/usr/avr/include/util/delay.h **** 
+  88:/usr/avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/avr/include/util/delay.h **** #endif
+  93:/usr/avr/include/util/delay.h **** 
+  94:/usr/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/avr/include/util/delay.h **** #endif
+  97:/usr/avr/include/util/delay.h **** 
+  98:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/avr/include/util/delay.h **** #endif
+ 103:/usr/avr/include/util/delay.h **** 
+ 104:/usr/avr/include/util/delay.h **** /**
+ 105:/usr/avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/avr/include/util/delay.h **** 
+ 107:/usr/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/avr/include/util/delay.h **** 
+ 109:/usr/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+GAS LISTING /tmp/ccHcWfNP.s 			page 29
+
+
+ 111:/usr/avr/include/util/delay.h **** 
+ 112:/usr/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/avr/include/util/delay.h **** 
+ 114:/usr/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/avr/include/util/delay.h **** 
+ 120:/usr/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/avr/include/util/delay.h **** 
+ 125:/usr/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/avr/include/util/delay.h **** 
+ 129:/usr/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/avr/include/util/delay.h **** 
+ 132:/usr/avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/avr/include/util/delay.h **** 
+ 140:/usr/avr/include/util/delay.h ****  */
+ 141:/usr/avr/include/util/delay.h **** void
+ 142:/usr/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/avr/include/util/delay.h **** {
+ 144:/usr/avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/avr/include/util/delay.h **** 
+ 153:/usr/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/avr/include/util/delay.h **** 
+ 156:/usr/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/avr/include/util/delay.h **** 
+ 159:/usr/avr/include/util/delay.h **** 	#else
+ 160:/usr/avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/avr/include/util/delay.h **** 	#endif
+ 163:/usr/avr/include/util/delay.h **** 
+ 164:/usr/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 165:/usr/avr/include/util/delay.h **** 
+ 166:/usr/avr/include/util/delay.h **** #else
+ 167:/usr/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 4e3) * __ms;
+GAS LISTING /tmp/ccHcWfNP.s 			page 30
+
+
+ 168:/usr/avr/include/util/delay.h **** 	if (__tmp < 1.0)
+ 169:/usr/avr/include/util/delay.h **** 		__ticks = 1;
+ 170:/usr/avr/include/util/delay.h **** 	else if (__tmp > 65535)
+ 171:/usr/avr/include/util/delay.h **** 	{
+ 172:/usr/avr/include/util/delay.h **** 		//	__ticks = requested delay in 1/10 ms
+ 173:/usr/avr/include/util/delay.h **** 		__ticks = (uint16_t) (__ms * 10.0);
+ 174:/usr/avr/include/util/delay.h **** 		while(__ticks)
+ 175:/usr/avr/include/util/delay.h **** 		{
+ 176:/usr/avr/include/util/delay.h **** 			// wait 1/10 ms
+ 177:/usr/avr/include/util/delay.h **** 			_delay_loop_2(((F_CPU) / 4e3) / 10);
+ 178:/usr/avr/include/util/delay.h **** 			__ticks --;
+ 179:/usr/avr/include/util/delay.h **** 		}
+ 180:/usr/avr/include/util/delay.h **** 		return;
+ 181:/usr/avr/include/util/delay.h **** 	}
+ 182:/usr/avr/include/util/delay.h **** 	else
+ 183:/usr/avr/include/util/delay.h **** 		__ticks = (uint16_t)__tmp;
+ 184:/usr/avr/include/util/delay.h **** 	_delay_loop_2(__ticks);
+ 185:/usr/avr/include/util/delay.h **** #endif
+ 186:/usr/avr/include/util/delay.h **** }
+ 187:/usr/avr/include/util/delay.h **** 
+ 188:/usr/avr/include/util/delay.h **** /**
+ 189:/usr/avr/include/util/delay.h ****    \ingroup util_delay
+ 190:/usr/avr/include/util/delay.h **** 
+ 191:/usr/avr/include/util/delay.h ****    Perform a delay of \c __us microseconds, using _delay_loop_1().
+ 192:/usr/avr/include/util/delay.h **** 
+ 193:/usr/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 194:/usr/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 195:/usr/avr/include/util/delay.h **** 
+ 196:/usr/avr/include/util/delay.h ****    The maximal possible delay is 768 us / F_CPU in MHz.
+ 197:/usr/avr/include/util/delay.h **** 
+ 198:/usr/avr/include/util/delay.h ****    If the user requests a delay greater than the maximal possible one,
+ 199:/usr/avr/include/util/delay.h ****    _delay_us() will automatically call _delay_ms() instead.  The user
+ 200:/usr/avr/include/util/delay.h ****    will not be informed about this case.
+ 201:/usr/avr/include/util/delay.h **** 
+ 202:/usr/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 203:/usr/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 us/ F_CPU in MHz. For
+ 204:/usr/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflow results in
+ 205:/usr/avr/include/util/delay.h ****    no delay i.e., 0us.
+ 206:/usr/avr/include/util/delay.h ****   
+ 207:/usr/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 208:/usr/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 209:/usr/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 210:/usr/avr/include/util/delay.h **** 
+ 211:/usr/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 212:/usr/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 213:/usr/avr/include/util/delay.h ****  
+ 214:/usr/avr/include/util/delay.h ****    Note: The new implementation of _delay_us(double __us) with 
+ 215:/usr/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible.
+ 216:/usr/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 217:/usr/avr/include/util/delay.h ****    Also, the backward compatible
+ 218:/usr/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 219:/usr/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 220:/usr/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 221:/usr/avr/include/util/delay.h **** 
+ 222:/usr/avr/include/util/delay.h ****  */
+ 223:/usr/avr/include/util/delay.h **** void
+ 224:/usr/avr/include/util/delay.h **** _delay_us(double __us)
+GAS LISTING /tmp/ccHcWfNP.s 			page 31
+
+
+ 225:/usr/avr/include/util/delay.h **** {
+ 226:/usr/avr/include/util/delay.h **** 	uint8_t __ticks;
+ 227:/usr/avr/include/util/delay.h **** 	double __tmp ; 
+ 228:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 229:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 230:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 231:/usr/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 232:/usr/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 233:/usr/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e6) * __us;
+ 234:/usr/avr/include/util/delay.h **** 
+ 235:/usr/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 236:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 237:/usr/avr/include/util/delay.h **** 
+ 238:/usr/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 239:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 240:/usr/avr/include/util/delay.h **** 
+ 241:/usr/avr/include/util/delay.h **** 	#else
+ 242:/usr/avr/include/util/delay.h **** 		//round up by default
+ 243:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 244:/usr/avr/include/util/delay.h **** 	#endif
+ 245:/usr/avr/include/util/delay.h **** 
+ 246:/usr/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 1084               		.stabn	68,0,246,.LM124-.LFBB21
+ 1085               	.LM124:
+ 1086 0376 89E8      		ldi r24,lo8(649)
+ 1087 0378 92E0      		ldi r25,hi8(649)
+ 1088 037a 0197      		1: sbiw r24,1
+ 1089 037c 01F4      		brne 1b
+ 1090 037e 00C0      		rjmp .
+ 1091 0380 0000      		nop
+ 1092 0382 0895      		ret
+ 1093               	.LBE13:
+ 1094               	.LBE12:
+ 1095               		.size	nrf_setmode.part.0, .-nrf_setmode.part.0
+ 1096               	.Lscope21:
+ 1097               		.stabs	"",36,0,0,.Lscope21-.LFBB21
+ 1098               		.stabd	78,0,0
+ 1099               		.stabs	"nrf_flushrx:F(5,2)",36,0,342,nrf_flushrx
+ 1100               	.global	nrf_flushrx
+ 1101               		.type	nrf_flushrx, @function
+ 1102               	nrf_flushrx:
+ 1103               		.stabd	46,0,0
+ 1104               		.stabs	"../../lib/nrf.c",132,0,0,.Ltext2
+ 1105               	.Ltext2:
+ 340:../../lib/nrf.c **** 
+ 341:../../lib/nrf.c **** 
+ 342:../../lib/nrf.c **** uint8_t nrf_flushrx(void) {
+ 1106               		.stabn	68,0,342,.LM125-.LFBB22
+ 1107               	.LM125:
+ 1108               	.LFBB22:
+ 1109 0384 CF93      		push r28
+ 1110 0386 DF93      		push r29
+ 1111 0388 1F92      		push __zero_reg__
+ 1112 038a CDB7      		in r28,__SP_L__
+ 1113 038c DEB7      		in r29,__SP_H__
+ 1114               	/* prologue: function */
+ 1115               	/* frame size = 1 */
+GAS LISTING /tmp/ccHcWfNP.s 			page 32
+
+
+ 1116               	/* stack size = 3 */
+ 1117               	.L__stack_usage = 3
+ 343:../../lib/nrf.c ****     uint8_t status;
+ 344:../../lib/nrf.c **** 
+ 345:../../lib/nrf.c ****     nrfspi_cs_en();
+ 1118               		.stabn	68,0,345,.LM126-.LFBB22
+ 1119               	.LM126:
+ 1120 038e 0E94 0000 		call nrfspi_cs_en
+ 346:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_FLSHR);
+ 1121               		.stabn	68,0,346,.LM127-.LFBB22
+ 1122               	.LM127:
+ 1123 0392 82EE      		ldi r24,lo8(-30)
+ 1124 0394 0E94 0000 		call nrfspi_txrx_byte
+ 347:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 1125               		.stabn	68,0,347,.LM128-.LFBB22
+ 1126               	.LM128:
+ 1127 0398 8983      		std Y+1,r24
+ 1128 039a 0E94 0000 		call nrfspi_cs_ds
+ 348:../../lib/nrf.c **** 
+ 349:../../lib/nrf.c ****     return status;
+ 350:../../lib/nrf.c **** }
+ 1129               		.stabn	68,0,350,.LM129-.LFBB22
+ 1130               	.LM129:
+ 1131 039e 8981      		ldd r24,Y+1
+ 1132               	/* epilogue start */
+ 1133 03a0 0F90      		pop __tmp_reg__
+ 1134 03a2 DF91      		pop r29
+ 1135 03a4 CF91      		pop r28
+ 1136 03a6 0895      		ret
+ 1137               		.size	nrf_flushrx, .-nrf_flushrx
+ 1138               		.stabs	"status:r(5,2)",64,0,343,24
+ 1139               		.stabn	192,0,0,.LFBB22-.LFBB22
+ 1140               		.stabn	224,0,0,.Lscope22-.LFBB22
+ 1141               	.Lscope22:
+ 1142               		.stabs	"",36,0,0,.Lscope22-.LFBB22
+ 1143               		.stabd	78,0,0
+ 1144               		.stabs	"nrf_stop_receiver:F(0,47)",36,0,171,nrf_stop_receiver
+ 1145               	.global	nrf_stop_receiver
+ 1146               		.type	nrf_stop_receiver, @function
+ 1147               	nrf_stop_receiver:
+ 1148               		.stabd	46,0,0
+ 171:../../lib/nrf.c **** void nrf_stop_receiver(void) {
+ 1149               		.stabn	68,0,171,.LM130-.LFBB23
+ 1150               	.LM130:
+ 1151               	.LFBB23:
+ 1152               	/* prologue: function */
+ 1153               	/* frame size = 0 */
+ 1154               	/* stack size = 0 */
+ 1155               	.L__stack_usage = 0
+ 172:../../lib/nrf.c ****     nrf_ce_off();
+ 1156               		.stabn	68,0,172,.LM131-.LFBB23
+ 1157               	.LM131:
+ 1158 03a8 0E94 0000 		call nrf_ce_off
+ 173:../../lib/nrf.c ****     nrf_flushrx();
+ 1159               		.stabn	68,0,173,.LM132-.LFBB23
+ 1160               	.LM132:
+ 1161 03ac 0E94 0000 		call nrf_flushrx
+GAS LISTING /tmp/ccHcWfNP.s 			page 33
+
+
+ 174:../../lib/nrf.c ****     nrf_disable_irq();
+ 1162               		.stabn	68,0,174,.LM133-.LFBB23
+ 1163               	.LM133:
+ 1164 03b0 0C94 0000 		jmp nrf_disable_irq
+ 1165               		.size	nrf_stop_receiver, .-nrf_stop_receiver
+ 1166               	.Lscope23:
+ 1167               		.stabs	"",36,0,0,.Lscope23-.LFBB23
+ 1168               		.stabd	78,0,0
+ 1169               		.stabs	"nrf_setmode:F(0,47)",36,0,231,nrf_setmode
+ 1170               		.stabs	"mode:P(10,2)",64,0,231,24
+ 1171               	.global	nrf_setmode
+ 1172               		.type	nrf_setmode, @function
+ 1173               	nrf_setmode:
+ 1174               		.stabd	46,0,0
+ 231:../../lib/nrf.c **** void nrf_setmode(nrf_mode_t mode) {
+ 1175               		.stabn	68,0,231,.LM134-.LFBB24
+ 1176               	.LM134:
+ 1177               	.LFBB24:
+ 1178               	/* prologue: function */
+ 1179               	/* frame size = 0 */
+ 1180               	/* stack size = 0 */
+ 1181               	.L__stack_usage = 0
+ 232:../../lib/nrf.c ****     if (mode == NRF_MODE_TX) {
+ 1182               		.stabn	68,0,232,.LM135-.LFBB24
+ 1183               	.LM135:
+ 1184 03b4 8130      		cpi r24,lo8(1)
+ 1185 03b6 01F4      		brne .L31
+ 1186 03b8 0C94 0000 		jmp nrf_setmode.part.0
+ 1187               	.L31:
+ 241:../../lib/nrf.c ****     } else if (mode == NRF_MODE_RX ) {
+ 1188               		.stabn	68,0,241,.LM136-.LFBB24
+ 1189               	.LM136:
+ 1190 03bc 8230      		cpi r24,lo8(2)
+ 1191 03be 01F4      		brne .L32
+ 242:../../lib/nrf.c ****         nrf_flushrx();
+ 1192               		.stabn	68,0,242,.LM137-.LFBB24
+ 1193               	.LM137:
+ 1194 03c0 0E94 0000 		call nrf_flushrx
+ 244:../../lib/nrf.c ****         nrf_regwr(NRF_REG_STATUS, _BV(NRF_BIT_RX_DR) | _BV(NRF_BIT_TX_DS)
+ 1195               		.stabn	68,0,244,.LM138-.LFBB24
+ 1196               	.LM138:
+ 1197 03c4 60E7      		ldi r22,lo8(112)
+ 1198 03c6 87E0      		ldi r24,lo8(7)
+ 1199 03c8 0E94 0000 		call nrf_regwr
+ 247:../../lib/nrf.c ****         nrf_regwr(NRF_REG_CONFIG, NRF_INI_CONFIG | _BV(NRF_BIT_PWR_UP) |
+ 1200               		.stabn	68,0,247,.LM139-.LFBB24
+ 1201               	.LM139:
+ 1202 03cc 6BE3      		ldi r22,lo8(59)
+ 1203 03ce 80E0      		ldi r24,0
+ 1204 03d0 0E94 0000 		call nrf_regwr
+ 1205               	.LBB16:
+ 1206               	.LBB17:
+ 1207               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext3
+ 1208               	.Ltext3:
+ 1209               		.stabn	68,0,246,.LM140-.LFBB24
+ 1210               	.LM140:
+ 1211 03d4 89E8      		ldi r24,lo8(649)
+GAS LISTING /tmp/ccHcWfNP.s 			page 34
+
+
+ 1212 03d6 92E0      		ldi r25,hi8(649)
+ 1213 03d8 0197      		1: sbiw r24,1
+ 1214 03da 01F4      		brne 1b
+ 1215 03dc 00C0      		rjmp .
+ 1216 03de 0000      		nop
+ 1217 03e0 0895      		ret
+ 1218               	.L32:
+ 1219               	.LBE17:
+ 1220               	.LBE16:
+ 1221               		.stabs	"../../lib/nrf.c",132,0,0,.Ltext4
+ 1222               	.Ltext4:
+ 251:../../lib/nrf.c ****         nrf_ce_off();
+ 1223               		.stabn	68,0,251,.LM141-.LFBB24
+ 1224               	.LM141:
+ 1225 03e2 0E94 0000 		call nrf_ce_off
+ 252:../../lib/nrf.c ****         nrf_regwr(NRF_REG_CONFIG, NRF_INI_CONFIG & ~(_BV(NRF_BIT_PWR_UP)));
+ 1226               		.stabn	68,0,252,.LM142-.LFBB24
+ 1227               	.LM142:
+ 1228 03e6 68E3      		ldi r22,lo8(56)
+ 1229 03e8 80E0      		ldi r24,0
+ 1230 03ea 0C94 0000 		jmp nrf_regwr
+ 1231               		.size	nrf_setmode, .-nrf_setmode
+ 1232               	.Lscope24:
+ 1233               		.stabs	"",36,0,0,.Lscope24-.LFBB24
+ 1234               		.stabd	78,0,0
+ 1235               		.stabs	"nrf_start_receiver:F(0,47)",36,0,162,nrf_start_receiver
+ 1236               	.global	nrf_start_receiver
+ 1237               		.type	nrf_start_receiver, @function
+ 1238               	nrf_start_receiver:
+ 1239               		.stabd	46,0,0
+ 162:../../lib/nrf.c **** void nrf_start_receiver(void) {
+ 1240               		.stabn	68,0,162,.LM143-.LFBB25
+ 1241               	.LM143:
+ 1242               	.LFBB25:
+ 1243               	/* prologue: function */
+ 1244               	/* frame size = 0 */
+ 1245               	/* stack size = 0 */
+ 1246               	.L__stack_usage = 0
+ 163:../../lib/nrf.c ****     packet_ready = 0;
+ 1247               		.stabn	68,0,163,.LM144-.LFBB25
+ 1248               	.LM144:
+ 1249 03ee 1092 0000 		sts packet_ready,__zero_reg__
+ 165:../../lib/nrf.c ****     nrf_setmode(NRF_MODE_RX);
+ 1250               		.stabn	68,0,165,.LM145-.LFBB25
+ 1251               	.LM145:
+ 1252 03f2 82E0      		ldi r24,lo8(2)
+ 1253 03f4 0E94 0000 		call nrf_setmode
+ 166:../../lib/nrf.c ****     nrf_enable_irq();
+ 1254               		.stabn	68,0,166,.LM146-.LFBB25
+ 1255               	.LM146:
+ 1256 03f8 0E94 0000 		call nrf_enable_irq
+ 167:../../lib/nrf.c ****     nrf_ce_on();
+ 1257               		.stabn	68,0,167,.LM147-.LFBB25
+ 1258               	.LM147:
+ 1259 03fc 0C94 0000 		jmp nrf_ce_on
+ 1260               		.size	nrf_start_receiver, .-nrf_start_receiver
+ 1261               	.Lscope25:
+GAS LISTING /tmp/ccHcWfNP.s 			page 35
+
+
+ 1262               		.stabs	"",36,0,0,.Lscope25-.LFBB25
+ 1263               		.stabd	78,0,0
+ 1264               		.stabs	"nrf_reusetx:F(5,2)",36,0,353,nrf_reusetx
+ 1265               	.global	nrf_reusetx
+ 1266               		.type	nrf_reusetx, @function
+ 1267               	nrf_reusetx:
+ 1268               		.stabd	46,0,0
+ 351:../../lib/nrf.c **** 
+ 352:../../lib/nrf.c **** 
+ 353:../../lib/nrf.c **** uint8_t nrf_reusetx(void) {
+ 1269               		.stabn	68,0,353,.LM148-.LFBB26
+ 1270               	.LM148:
+ 1271               	.LFBB26:
+ 1272 0400 CF93      		push r28
+ 1273 0402 DF93      		push r29
+ 1274 0404 1F92      		push __zero_reg__
+ 1275 0406 CDB7      		in r28,__SP_L__
+ 1276 0408 DEB7      		in r29,__SP_H__
+ 1277               	/* prologue: function */
+ 1278               	/* frame size = 1 */
+ 1279               	/* stack size = 3 */
+ 1280               	.L__stack_usage = 3
+ 354:../../lib/nrf.c ****     uint8_t status;
+ 355:../../lib/nrf.c **** 
+ 356:../../lib/nrf.c ****     nrfspi_cs_en();
+ 1281               		.stabn	68,0,356,.LM149-.LFBB26
+ 1282               	.LM149:
+ 1283 040a 0E94 0000 		call nrfspi_cs_en
+ 357:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_REUSE);
+ 1284               		.stabn	68,0,357,.LM150-.LFBB26
+ 1285               	.LM150:
+ 1286 040e 83EE      		ldi r24,lo8(-29)
+ 1287 0410 0E94 0000 		call nrfspi_txrx_byte
+ 358:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 1288               		.stabn	68,0,358,.LM151-.LFBB26
+ 1289               	.LM151:
+ 1290 0414 8983      		std Y+1,r24
+ 1291 0416 0E94 0000 		call nrfspi_cs_ds
+ 359:../../lib/nrf.c **** 
+ 360:../../lib/nrf.c ****     return status;
+ 361:../../lib/nrf.c **** }
+ 1292               		.stabn	68,0,361,.LM152-.LFBB26
+ 1293               	.LM152:
+ 1294 041a 8981      		ldd r24,Y+1
+ 1295               	/* epilogue start */
+ 1296 041c 0F90      		pop __tmp_reg__
+ 1297 041e DF91      		pop r29
+ 1298 0420 CF91      		pop r28
+ 1299 0422 0895      		ret
+ 1300               		.size	nrf_reusetx, .-nrf_reusetx
+ 1301               		.stabs	"status:r(5,2)",64,0,354,24
+ 1302               		.stabn	192,0,0,.LFBB26-.LFBB26
+ 1303               		.stabn	224,0,0,.Lscope26-.LFBB26
+ 1304               	.Lscope26:
+ 1305               		.stabs	"",36,0,0,.Lscope26-.LFBB26
+ 1306               		.stabd	78,0,0
+ 1307               		.stabs	"nrf_rxplwidth:F(5,2)",36,0,364,nrf_rxplwidth
+GAS LISTING /tmp/ccHcWfNP.s 			page 36
+
+
+ 1308               	.global	nrf_rxplwidth
+ 1309               		.type	nrf_rxplwidth, @function
+ 1310               	nrf_rxplwidth:
+ 1311               		.stabd	46,0,0
+ 362:../../lib/nrf.c **** 
+ 363:../../lib/nrf.c **** 
+ 364:../../lib/nrf.c **** uint8_t nrf_rxplwidth(void) {
+ 1312               		.stabn	68,0,364,.LM153-.LFBB27
+ 1313               	.LM153:
+ 1314               	.LFBB27:
+ 1315 0424 CF93      		push r28
+ 1316 0426 DF93      		push r29
+ 1317 0428 1F92      		push __zero_reg__
+ 1318 042a CDB7      		in r28,__SP_L__
+ 1319 042c DEB7      		in r29,__SP_H__
+ 1320               	/* prologue: function */
+ 1321               	/* frame size = 1 */
+ 1322               	/* stack size = 3 */
+ 1323               	.L__stack_usage = 3
+ 365:../../lib/nrf.c ****     uint8_t ret;
+ 366:../../lib/nrf.c **** 
+ 367:../../lib/nrf.c ****     nrfspi_cs_en();
+ 1324               		.stabn	68,0,367,.LM154-.LFBB27
+ 1325               	.LM154:
+ 1326 042e 0E94 0000 		call nrfspi_cs_en
+ 368:../../lib/nrf.c ****     nrfspi_txrx_byte(NRF_CMD_RXPLW);
+ 1327               		.stabn	68,0,368,.LM155-.LFBB27
+ 1328               	.LM155:
+ 1329 0432 80E6      		ldi r24,lo8(96)
+ 1330 0434 0E94 0000 		call nrfspi_txrx_byte
+ 369:../../lib/nrf.c ****     ret = nrfspi_txrx_byte(0);
+ 1331               		.stabn	68,0,369,.LM156-.LFBB27
+ 1332               	.LM156:
+ 1333 0438 80E0      		ldi r24,0
+ 1334 043a 0E94 0000 		call nrfspi_txrx_byte
+ 370:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 1335               		.stabn	68,0,370,.LM157-.LFBB27
+ 1336               	.LM157:
+ 1337 043e 8983      		std Y+1,r24
+ 1338 0440 0E94 0000 		call nrfspi_cs_ds
+ 371:../../lib/nrf.c **** 
+ 372:../../lib/nrf.c ****     return ret;
+ 373:../../lib/nrf.c **** }
+ 1339               		.stabn	68,0,373,.LM158-.LFBB27
+ 1340               	.LM158:
+ 1341 0444 8981      		ldd r24,Y+1
+ 1342               	/* epilogue start */
+ 1343 0446 0F90      		pop __tmp_reg__
+ 1344 0448 DF91      		pop r29
+ 1345 044a CF91      		pop r28
+ 1346 044c 0895      		ret
+ 1347               		.size	nrf_rxplwidth, .-nrf_rxplwidth
+ 1348               		.stabs	"ret:r(5,2)",64,0,365,24
+ 1349               		.stabn	192,0,0,.LFBB27-.LFBB27
+ 1350               		.stabn	224,0,0,.Lscope27-.LFBB27
+ 1351               	.Lscope27:
+ 1352               		.stabs	"",36,0,0,.Lscope27-.LFBB27
+GAS LISTING /tmp/ccHcWfNP.s 			page 37
+
+
+ 1353               		.stabd	78,0,0
+ 1354               		.stabs	"nrf_ackpl:F(5,2)",36,0,376,nrf_ackpl
+ 1355               		.stabs	"pipe:P(5,2)",64,0,376,24
+ 1356               		.stabs	"len:P(5,2)",64,0,376,16
+ 1357               		.stabs	"buf:P(0,48)",64,0,376,14
+ 1358               	.global	nrf_ackpl
+ 1359               		.type	nrf_ackpl, @function
+ 1360               	nrf_ackpl:
+ 1361               		.stabd	46,0,0
+ 374:../../lib/nrf.c **** 
+ 375:../../lib/nrf.c **** 
+ 376:../../lib/nrf.c **** uint8_t nrf_ackpl(uint8_t pipe, uint8_t len, uint8_t *buf) {
+ 1362               		.stabn	68,0,376,.LM159-.LFBB28
+ 1363               	.LM159:
+ 1364               	.LFBB28:
+ 1365 044e EF92      		push r14
+ 1366 0450 FF92      		push r15
+ 1367 0452 0F93      		push r16
+ 1368 0454 1F93      		push r17
+ 1369 0456 CF93      		push r28
+ 1370 0458 DF93      		push r29
+ 1371 045a 1F92      		push __zero_reg__
+ 1372 045c CDB7      		in r28,__SP_L__
+ 1373 045e DEB7      		in r29,__SP_H__
+ 1374               	/* prologue: function */
+ 1375               	/* frame size = 1 */
+ 1376               	/* stack size = 7 */
+ 1377               	.L__stack_usage = 7
+ 1378 0460 062F      		mov r16,r22
+ 1379 0462 7A01      		movw r14,r20
+ 377:../../lib/nrf.c ****     uint8_t status;
+ 378:../../lib/nrf.c ****     
+ 379:../../lib/nrf.c ****     nrfspi_cs_en();
+ 1380               		.stabn	68,0,379,.LM160-.LFBB28
+ 1381               	.LM160:
+ 1382 0464 8983      		std Y+1,r24
+ 1383 0466 0E94 0000 		call nrfspi_cs_en
+ 380:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_RXPLW | pipe);
+ 1384               		.stabn	68,0,380,.LM161-.LFBB28
+ 1385               	.LM161:
+ 1386 046a 8981      		ldd r24,Y+1
+ 1387 046c 8066      		ori r24,lo8(96)
+ 1388 046e 0E94 0000 		call nrfspi_txrx_byte
+ 1389 0472 182F      		mov r17,r24
+ 381:../../lib/nrf.c ****     nrfspi_txrx(len, buf, 0);
+ 1390               		.stabn	68,0,381,.LM162-.LFBB28
+ 1391               	.LM162:
+ 1392 0474 40E0      		ldi r20,0
+ 1393 0476 50E0      		ldi r21,0
+ 1394 0478 B701      		movw r22,r14
+ 1395 047a 802F      		mov r24,r16
+ 1396 047c 0E94 0000 		call nrfspi_txrx
+ 382:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 1397               		.stabn	68,0,382,.LM163-.LFBB28
+ 1398               	.LM163:
+ 1399 0480 0E94 0000 		call nrfspi_cs_ds
+ 383:../../lib/nrf.c **** 
+GAS LISTING /tmp/ccHcWfNP.s 			page 38
+
+
+ 384:../../lib/nrf.c ****     return status;
+ 385:../../lib/nrf.c **** }
+ 1400               		.stabn	68,0,385,.LM164-.LFBB28
+ 1401               	.LM164:
+ 1402 0484 812F      		mov r24,r17
+ 1403               	/* epilogue start */
+ 1404 0486 0F90      		pop __tmp_reg__
+ 1405 0488 DF91      		pop r29
+ 1406 048a CF91      		pop r28
+ 1407 048c 1F91      		pop r17
+ 1408 048e 0F91      		pop r16
+ 1409 0490 FF90      		pop r15
+ 1410 0492 EF90      		pop r14
+ 1411 0494 0895      		ret
+ 1412               		.size	nrf_ackpl, .-nrf_ackpl
+ 1413               		.stabs	"status:r(5,2)",64,0,377,17
+ 1414               		.stabn	192,0,0,.LFBB28-.LFBB28
+ 1415               		.stabn	224,0,0,.Lscope28-.LFBB28
+ 1416               	.Lscope28:
+ 1417               		.stabs	"",36,0,0,.Lscope28-.LFBB28
+ 1418               		.stabd	78,0,0
+ 1419               		.stabs	"nrf_txnoack:F(5,2)",36,0,388,nrf_txnoack
+ 1420               		.stabs	"pipe:P(5,2)",64,0,388,24
+ 1421               		.stabs	"len:P(5,2)",64,0,388,16
+ 1422               		.stabs	"buf:P(0,48)",64,0,388,14
+ 1423               	.global	nrf_txnoack
+ 1424               		.type	nrf_txnoack, @function
+ 1425               	nrf_txnoack:
+ 1426               		.stabd	46,0,0
+ 386:../../lib/nrf.c **** 
+ 387:../../lib/nrf.c **** 
+ 388:../../lib/nrf.c **** uint8_t nrf_txnoack(uint8_t pipe, uint8_t len, uint8_t *buf) {
+ 1427               		.stabn	68,0,388,.LM165-.LFBB29
+ 1428               	.LM165:
+ 1429               	.LFBB29:
+ 1430 0496 EF92      		push r14
+ 1431 0498 FF92      		push r15
+ 1432 049a 0F93      		push r16
+ 1433 049c 1F93      		push r17
+ 1434 049e CF93      		push r28
+ 1435 04a0 DF93      		push r29
+ 1436 04a2 1F92      		push __zero_reg__
+ 1437 04a4 CDB7      		in r28,__SP_L__
+ 1438 04a6 DEB7      		in r29,__SP_H__
+ 1439               	/* prologue: function */
+ 1440               	/* frame size = 1 */
+ 1441               	/* stack size = 7 */
+ 1442               	.L__stack_usage = 7
+ 1443 04a8 062F      		mov r16,r22
+ 1444 04aa 7A01      		movw r14,r20
+ 389:../../lib/nrf.c ****     uint8_t status;
+ 390:../../lib/nrf.c **** 
+ 391:../../lib/nrf.c ****     nrfspi_cs_en();
+ 1445               		.stabn	68,0,391,.LM166-.LFBB29
+ 1446               	.LM166:
+ 1447 04ac 8983      		std Y+1,r24
+ 1448 04ae 0E94 0000 		call nrfspi_cs_en
+GAS LISTING /tmp/ccHcWfNP.s 			page 39
+
+
+ 392:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_NOACK | pipe);
+ 1449               		.stabn	68,0,392,.LM167-.LFBB29
+ 1450               	.LM167:
+ 1451 04b2 8981      		ldd r24,Y+1
+ 1452 04b4 806B      		ori r24,lo8(-80)
+ 1453 04b6 0E94 0000 		call nrfspi_txrx_byte
+ 1454 04ba 182F      		mov r17,r24
+ 393:../../lib/nrf.c ****     nrfspi_txrx(len, buf, 0);
+ 1455               		.stabn	68,0,393,.LM168-.LFBB29
+ 1456               	.LM168:
+ 1457 04bc 40E0      		ldi r20,0
+ 1458 04be 50E0      		ldi r21,0
+ 1459 04c0 B701      		movw r22,r14
+ 1460 04c2 802F      		mov r24,r16
+ 1461 04c4 0E94 0000 		call nrfspi_txrx
+ 394:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 1462               		.stabn	68,0,394,.LM169-.LFBB29
+ 1463               	.LM169:
+ 1464 04c8 0E94 0000 		call nrfspi_cs_ds
+ 395:../../lib/nrf.c **** 
+ 396:../../lib/nrf.c ****     return status;
+ 397:../../lib/nrf.c **** }
+ 1465               		.stabn	68,0,397,.LM170-.LFBB29
+ 1466               	.LM170:
+ 1467 04cc 812F      		mov r24,r17
+ 1468               	/* epilogue start */
+ 1469 04ce 0F90      		pop __tmp_reg__
+ 1470 04d0 DF91      		pop r29
+ 1471 04d2 CF91      		pop r28
+ 1472 04d4 1F91      		pop r17
+ 1473 04d6 0F91      		pop r16
+ 1474 04d8 FF90      		pop r15
+ 1475 04da EF90      		pop r14
+ 1476 04dc 0895      		ret
+ 1477               		.size	nrf_txnoack, .-nrf_txnoack
+ 1478               		.stabs	"status:r(5,2)",64,0,389,17
+ 1479               		.stabn	192,0,0,.LFBB29-.LFBB29
+ 1480               		.stabn	224,0,0,.Lscope29-.LFBB29
+ 1481               	.Lscope29:
+ 1482               		.stabs	"",36,0,0,.Lscope29-.LFBB29
+ 1483               		.stabd	78,0,0
+ 1484               		.stabs	"nrf_status:F(5,2)",36,0,400,nrf_status
+ 1485               	.global	nrf_status
+ 1486               		.type	nrf_status, @function
+ 1487               	nrf_status:
+ 1488               		.stabd	46,0,0
+ 398:../../lib/nrf.c **** 
+ 399:../../lib/nrf.c **** 
+ 400:../../lib/nrf.c **** uint8_t nrf_status(void) {
+ 1489               		.stabn	68,0,400,.LM171-.LFBB30
+ 1490               	.LM171:
+ 1491               	.LFBB30:
+ 1492 04de CF93      		push r28
+ 1493 04e0 DF93      		push r29
+ 1494 04e2 1F92      		push __zero_reg__
+ 1495 04e4 CDB7      		in r28,__SP_L__
+ 1496 04e6 DEB7      		in r29,__SP_H__
+GAS LISTING /tmp/ccHcWfNP.s 			page 40
+
+
+ 1497               	/* prologue: function */
+ 1498               	/* frame size = 1 */
+ 1499               	/* stack size = 3 */
+ 1500               	.L__stack_usage = 3
+ 401:../../lib/nrf.c ****     uint8_t status;
+ 402:../../lib/nrf.c **** 
+ 403:../../lib/nrf.c ****     nrfspi_cs_en();
+ 1501               		.stabn	68,0,403,.LM172-.LFBB30
+ 1502               	.LM172:
+ 1503 04e8 0E94 0000 		call nrfspi_cs_en
+ 404:../../lib/nrf.c ****     status = nrfspi_txrx_byte(NRF_CMD_XXNOP);
+ 1504               		.stabn	68,0,404,.LM173-.LFBB30
+ 1505               	.LM173:
+ 1506 04ec 8FEF      		ldi r24,lo8(-1)
+ 1507 04ee 0E94 0000 		call nrfspi_txrx_byte
+ 405:../../lib/nrf.c ****     nrfspi_cs_ds();
+ 1508               		.stabn	68,0,405,.LM174-.LFBB30
+ 1509               	.LM174:
+ 1510 04f2 8983      		std Y+1,r24
+ 1511 04f4 0E94 0000 		call nrfspi_cs_ds
+ 406:../../lib/nrf.c **** 
+ 407:../../lib/nrf.c ****     return status;
+ 408:../../lib/nrf.c **** }
+ 1512               		.stabn	68,0,408,.LM175-.LFBB30
+ 1513               	.LM175:
+ 1514 04f8 8981      		ldd r24,Y+1
+ 1515               	/* epilogue start */
+ 1516 04fa 0F90      		pop __tmp_reg__
+ 1517 04fc DF91      		pop r29
+ 1518 04fe CF91      		pop r28
+ 1519 0500 0895      		ret
+ 1520               		.size	nrf_status, .-nrf_status
+ 1521               		.stabs	"status:r(5,2)",64,0,401,24
+ 1522               		.stabn	192,0,0,.LFBB30-.LFBB30
+ 1523               		.stabn	224,0,0,.Lscope30-.LFBB30
+ 1524               	.Lscope30:
+ 1525               		.stabs	"",36,0,0,.Lscope30-.LFBB30
+ 1526               		.stabd	78,0,0
+ 1527               		.stabs	"nrf_transmit_packet:F(5,2)",36,0,121,nrf_transmit_packet
+ 1528               		.stabs	"addr:P(0,48)",64,0,121,28
+ 1529               		.stabs	"buf:P(0,48)",64,0,121,16
+ 1530               	.global	nrf_transmit_packet
+ 1531               		.type	nrf_transmit_packet, @function
+ 1532               	nrf_transmit_packet:
+ 1533               		.stabd	46,0,0
+ 121:../../lib/nrf.c **** uint8_t nrf_transmit_packet(uint8_t *addr, uint8_t *buf) {
+ 1534               		.stabn	68,0,121,.LM176-.LFBB31
+ 1535               	.LM176:
+ 1536               	.LFBB31:
+ 1537 0502 0F93      		push r16
+ 1538 0504 1F93      		push r17
+ 1539 0506 CF93      		push r28
+ 1540 0508 DF93      		push r29
+ 1541               	/* prologue: function */
+ 1542               	/* frame size = 0 */
+ 1543               	/* stack size = 4 */
+ 1544               	.L__stack_usage = 4
+GAS LISTING /tmp/ccHcWfNP.s 			page 41
+
+
+ 1545 050a EC01      		movw r28,r24
+ 1546 050c 8B01      		movw r16,r22
+ 125:../../lib/nrf.c ****     nrf_ce_off();
+ 1547               		.stabn	68,0,125,.LM177-.LFBB31
+ 1548               	.LM177:
+ 1549 050e 0E94 0000 		call nrf_ce_off
+ 1550               	.LBB24:
+ 1551               	.LBB25:
+ 1552 0512 0E94 0000 		call nrf_setmode.part.0
+ 1553               	.LBE25:
+ 1554               	.LBE24:
+ 129:../../lib/nrf.c ****     nrf_regwr_long(NRF_REG_RX_ADDR_P0, COM_AD_SIZE, addr);
+ 1555               		.stabn	68,0,129,.LM178-.LFBB31
+ 1556               	.LM178:
+ 1557 0516 AE01      		movw r20,r28
+ 1558 0518 65E0      		ldi r22,lo8(5)
+ 1559 051a 8AE0      		ldi r24,lo8(10)
+ 1560 051c 0E94 0000 		call nrf_regwr_long
+ 130:../../lib/nrf.c ****     nrf_regwr_long(NRF_REG_TX_ADDR, COM_AD_SIZE, addr);
+ 1561               		.stabn	68,0,130,.LM179-.LFBB31
+ 1562               	.LM179:
+ 1563 0520 AE01      		movw r20,r28
+ 1564 0522 65E0      		ldi r22,lo8(5)
+ 1565 0524 80E1      		ldi r24,lo8(16)
+ 1566 0526 0E94 0000 		call nrf_regwr_long
+ 134:../../lib/nrf.c ****     nrf_txpayload(buf);
+ 1567               		.stabn	68,0,134,.LM180-.LFBB31
+ 1568               	.LM180:
+ 1569 052a C801      		movw r24,r16
+ 1570 052c 0E94 0000 		call nrf_txpayload
+ 137:../../lib/nrf.c ****     nrf_ce_on();
+ 1571               		.stabn	68,0,137,.LM181-.LFBB31
+ 1572               	.LM181:
+ 1573 0530 0E94 0000 		call nrf_ce_on
+ 1574               	.LBB26:
+ 1575               	.LBB27:
+ 1576               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext5
+ 1577               	.Ltext5:
+ 1578               		.stabn	68,0,246,.LM182-.LFBB31
+ 1579               	.LM182:
+ 1580 0534 84E6      		ldi r24,lo8(100)
+ 1581 0536 8A95      		1: dec r24
+ 1582 0538 01F4      		brne 1b
+ 1583               	.LBE27:
+ 1584               	.LBE26:
+ 1585               		.stabs	"../../lib/nrf.c",132,0,0,.Ltext6
+ 1586               	.Ltext6:
+ 139:../../lib/nrf.c ****     nrf_ce_off();
+ 1587               		.stabn	68,0,139,.LM183-.LFBB31
+ 1588               	.LM183:
+ 1589 053a 0E94 0000 		call nrf_ce_off
+ 1590               	.L43:
+ 142:../../lib/nrf.c ****     while ( !(nrf_status() & (_BV(NRF_BIT_TX_DS)|_BV(NRF_BIT_MAX_RT))) );
+ 1591               		.stabn	68,0,142,.LM184-.LFBB31
+ 1592               	.LM184:
+ 1593 053e 0E94 0000 		call nrf_status
+ 1594 0542 8073      		andi r24,lo8(48)
+GAS LISTING /tmp/ccHcWfNP.s 			page 42
+
+
+ 1595 0544 01F0      		breq .L43
+ 144:../../lib/nrf.c ****     if ( nrf_status() & _BV(NRF_BIT_TX_DS) ) {
+ 1596               		.stabn	68,0,144,.LM185-.LFBB31
+ 1597               	.LM185:
+ 1598 0546 0E94 0000 		call nrf_status
+ 1599 054a C82F      		mov r28,r24
+ 151:../../lib/nrf.c ****     nrf_regwr(NRF_REG_STATUS, nrf_status() | _BV(NRF_BIT_TX_DS) | _BV(NRF_BIT_MAX_RT));
+ 1600               		.stabn	68,0,151,.LM186-.LFBB31
+ 1601               	.LM186:
+ 1602 054c 0E94 0000 		call nrf_status
+ 1603 0550 682F      		mov r22,r24
+ 1604 0552 6063      		ori r22,lo8(48)
+ 1605 0554 87E0      		ldi r24,lo8(7)
+ 1606 0556 0E94 0000 		call nrf_regwr
+ 154:../../lib/nrf.c ****     nrf_setmode(NRF_MODE_RX);
+ 1607               		.stabn	68,0,154,.LM187-.LFBB31
+ 1608               	.LM187:
+ 1609 055a 82E0      		ldi r24,lo8(2)
+ 1610 055c 0E94 0000 		call nrf_setmode
+ 155:../../lib/nrf.c ****     nrf_ce_on();
+ 1611               		.stabn	68,0,155,.LM188-.LFBB31
+ 1612               	.LM188:
+ 1613 0560 0E94 0000 		call nrf_ce_on
+ 159:../../lib/nrf.c **** }
+ 1614               		.stabn	68,0,159,.LM189-.LFBB31
+ 1615               	.LM189:
+ 1616 0564 C5FB      		bst r28,5
+ 1617 0566 8827      		clr r24
+ 1618 0568 80F9      		bld r24,0
+ 1619               	/* epilogue start */
+ 1620 056a DF91      		pop r29
+ 1621 056c CF91      		pop r28
+ 1622 056e 1F91      		pop r17
+ 1623 0570 0F91      		pop r16
+ 1624 0572 0895      		ret
+ 1625               		.size	nrf_transmit_packet, .-nrf_transmit_packet
+ 1626               	.Lscope31:
+ 1627               		.stabs	"",36,0,0,.Lscope31-.LFBB31
+ 1628               		.stabd	78,0,0
+ 1629               	.global	packet_ready
+ 1630               		.section .bss
+ 1631               		.type	packet_ready, @object
+ 1632               		.size	packet_ready, 1
+ 1633               	packet_ready:
+ 1634 0000 00        		.zero	1
+ 1635               		.comm	rx_packet_buffer,2,1
+ 1636               		.stabs	"rx_packet_buffer:G(0,48)",32,0,10,0
+ 1637               		.stabs	"packet_ready:G(0,49)=B(5,2)",32,0,12,0
+ 1638               		.text
+ 1639               		.stabs	"",100,0,0,.Letext0
+ 1640               	.Letext0:
+ 1641               		.ident	"GCC: (GNU) 4.8.2"
+ 1642               	.global __do_clear_bss
+GAS LISTING /tmp/ccHcWfNP.s 			page 43
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 nrf.c
+     /tmp/ccHcWfNP.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccHcWfNP.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccHcWfNP.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccHcWfNP.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccHcWfNP.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccHcWfNP.s:116    .text:0000000000000000 nrf_enable_irq
+     /tmp/ccHcWfNP.s:139    .text:0000000000000006 nrf_disable_irq
+     /tmp/ccHcWfNP.s:1633   .bss:0000000000000000 packet_ready
+     /tmp/ccHcWfNP.s:162    .text:000000000000000e nrf_wait_for_rxpacket
+     /tmp/ccHcWfNP.s:188    .text:0000000000000018 nrf_isready_packet
+     /tmp/ccHcWfNP.s:210    .text:000000000000001e nrf_accept_packet
+     /tmp/ccHcWfNP.s:232    .text:0000000000000026 nrf_ce_on
+     /tmp/ccHcWfNP.s:252    .text:000000000000002a nrf_ce_off
+     /tmp/ccHcWfNP.s:273    .text:000000000000002e nrf_txpayload
+     /tmp/ccHcWfNP.s:323    .text:000000000000005c nrf_rxpayload
+     /tmp/ccHcWfNP.s:374    .text:0000000000000088 nrf_regwr_long
+     /tmp/ccHcWfNP.s:438    .text:00000000000000ce nrf_regrd_long
+     /tmp/ccHcWfNP.s:500    .text:0000000000000112 nrf_regwr
+     /tmp/ccHcWfNP.s:555    .text:000000000000014a nrf_set_channel
+     /tmp/ccHcWfNP.s:577    .text:0000000000000154 __vector_1
+                            *COM*:0000000000000002 rx_packet_buffer
+     /tmp/ccHcWfNP.s:666    .text:00000000000001ce nrf_regrd
+     /tmp/ccHcWfNP.s:715    .text:00000000000001fa nrf_init
+     /tmp/ccHcWfNP.s:835    .text:000000000000028e nrf_set_power
+     /tmp/ccHcWfNP.s:877    .text:00000000000002a8 nrf_enable_pipe
+     /tmp/ccHcWfNP.s:974    .text:000000000000031c nrf_disable_pipe
+     /tmp/ccHcWfNP.s:1016   .text:000000000000033e nrf_flushtx
+     /tmp/ccHcWfNP.s:1058   .text:0000000000000362 nrf_setmode.part.0
+     /tmp/ccHcWfNP.s:1102   .text:0000000000000384 nrf_flushrx
+     /tmp/ccHcWfNP.s:1147   .text:00000000000003a8 nrf_stop_receiver
+     /tmp/ccHcWfNP.s:1173   .text:00000000000003b4 nrf_setmode
+     /tmp/ccHcWfNP.s:1238   .text:00000000000003ee nrf_start_receiver
+     /tmp/ccHcWfNP.s:1267   .text:0000000000000400 nrf_reusetx
+     /tmp/ccHcWfNP.s:1310   .text:0000000000000424 nrf_rxplwidth
+     /tmp/ccHcWfNP.s:1360   .text:000000000000044e nrf_ackpl
+     /tmp/ccHcWfNP.s:1425   .text:0000000000000496 nrf_txnoack
+     /tmp/ccHcWfNP.s:1487   .text:00000000000004de nrf_status
+     /tmp/ccHcWfNP.s:1532   .text:0000000000000502 nrf_transmit_packet
+
+UNDEFINED SYMBOLS
+nrfspi_cs_en
+nrfspi_txrx_byte
+nrfspi_txrx
+nrfspi_cs_ds
+dbg_set
+nrfspi_init
+nrfspi_enable
+__do_clear_bss
