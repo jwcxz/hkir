@@ -1,3 +1,9 @@
+# Tags
+tags
+
+# Firmware output
+fw/prj/*/out
+
 # Object files
 *.o
 *.ko

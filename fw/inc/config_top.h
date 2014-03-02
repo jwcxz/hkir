@@ -2,7 +2,7 @@
 #define __CONFIG_TOP_H
 
 // system clock
-#define SYSCLK 20000000UL
+#define SYSCLK 16000000UL
 #define F_CPU  SYSCLK
 
 

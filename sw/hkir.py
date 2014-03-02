@@ -32,7 +32,7 @@ if __name__ == "__main__":
     if args.pwr_off:
         cmds += 'O';
 
-    cxn = serial.Serial(args.port, 9600);
+    cxn = serial.Serial(args.port, 115200);
     cxn.write(cmds);
     cxn.flush();
     cxn.close();

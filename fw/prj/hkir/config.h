@@ -6,7 +6,7 @@
 #include "pins.h"
 
 // UART config
-#define UART_PRESCALER  259
+#define UART_PRESCALER  16
 #define UART_DBL        1
 #define UART_PARITY     0
 

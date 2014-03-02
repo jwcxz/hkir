@@ -3,7 +3,7 @@
 
 
 // IR control
-#define IR_OUT_PIN  PC5
+#define IR_OUT_PIN  PC2
 #define IR_OUT_PORT PORTC
 #define IR_OUT_DDR  DDRC
 
